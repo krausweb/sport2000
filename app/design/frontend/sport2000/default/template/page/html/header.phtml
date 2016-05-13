@@ -1,0 +1,90 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     sport2000_default
+ * @copyright   Copyright (c) 2006-2016 X.commerce, Inc. and affiliates (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+
+
+// @todo AK --- will need to ask
+Mage::app()->getLocale()->currency( Mage::app()->getStore()->getCurrentCurrencyCode() )
+    ->setFormat(array('format'=>'¤ #,##0.00'));
+
+//Zend_Debug::dump( Mage::app()->getLocale()->currency( Mage::app()->getStore()->getCurrentCurrencyCode()) );
+?>
+
+<header id="header" class="page-header">
+    <div class="page-header-container">
+        
+        <div class="page-header-container-top">
+            <div class="page-header-container-top-align">
+                <a class="logo logo-align" href="<?php echo $this->getUrl('') ?>">
+                    <img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" class="large" />
+                </a>
+                <div class="page-header-container-top-menu">
+                    <!-- Navigation -->
+                    <?php echo $this->getChildHtml('topMenu') ?>
+                </div>
+
+
+                <div class="page-header-account-cart">
+                    <div class="skip-links">
+                        <div class="account-cart-wrapper">
+                            <!-- Account -->
+                            <a href="<?php echo $this->helper('customer')->getAccountUrl(); ?>" class="skip-link skip-account account" data-target-element="#header-account">
+                                <span class="icon"></span>
+                                <span class="label"><?php echo $this->__('Account'); ?></span>
+                            </a>
+                            <div id="header-account" class="skip-content account-detail">
+                                <?php echo $this->getChildHtml('topLinks') ?>
+                            </div>
+
+                            <!-- Cart -->
+                            <div class="header-minicart cart">
+                                <?php echo $this->getChildHtml('minicart_head'); ?>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+
+                </div>
+
+            </div>
+        </div>
+        <div class="page-header-container-down">
+            <div class="page-header-container-down-align">
+                <!-- Search -->
+                <div id="header-search" class="skip-content">
+                    <?php echo $this->getChildHtml('topSearch') ?>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</header>
+
+
+<?php echo $this->getChildHtml('topContainer'); ?>
