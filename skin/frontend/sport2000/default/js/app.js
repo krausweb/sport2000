@@ -691,6 +691,107 @@ $j(document).ready(function () {
         if (! $j(e.target).hasClass('.change')) $j(".change").removeClass('active');
     });
 
+
+    // =============================================
+    // Skip Links
+    // =============================================
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////// START Addtional for design Sport2000 ///////////////////////////////////////////
+
+    var skipContents = $j('.skip-content');
+    var skipLinks = $j('.skip-link');
+
+    skipLinks.on('mouseenter mouseleave', function (e) {
+        e.preventDefault();
+
+        var self = $j(this);
+        // Use the data-target-element attribute, if it exists. Fall back to href.
+        var target = self.attr('data-target-element') ? self.attr('data-target-element') : self.attr('href');
+
+        // Get target element
+        var elem = $j(target);
+
+        // Check if stub is open
+        var isSkipContentOpen = elem.hasClass('skip-active') ? 1 : 0;
+
+        // Hide all stubs
+        skipLinks.removeClass('skip-active a-account-cart-hover');
+        skipContents.removeClass('skip-active');
+
+        // Toggle stubs
+        if (isSkipContentOpen) {
+            self.removeClass('skip-active a-account-cart-hover');
+        } else {
+            self.addClass('skip-active a-account-cart-hover');
+            elem.addClass('skip-active');
+        }
+    });
+
+    ////////////////// for Account Detail /////////////////////////
+    var accountDetail = $j('.account-detail');
+    var account = $j('.account');
+    accountDetail.on('mouseenter mouseleave', function () {
+         // Toggle stubs
+         if ( accountDetail.hasClass('account-detail-active') ) {
+             accountDetail.removeClass('skip-active account-detail-active');
+             account.removeClass('a-account-cart-hover');
+
+             // accountDetail.removeClass('skip-active account-detail-active', 1000, 'linear');
+             // accountDetail.removeClass('skip-active account-detail-active').slideDown('3000');
+         } else {
+             accountDetail.addClass('skip-active account-detail-active');
+             account.addClass('a-account-cart-hover');
+
+             // accountDetail.addClass('skip-active account-detail-active', 1000, 'linear');
+             // accountDetail.addClass('skip-active account-detail-active').slideUp('3000');
+         }
+    });
+
+    /////////////////// for Cart Detail ////////////////
+    var cartDetail = $j('.cart-detail');
+    var cart = $j('.cart');
+    cartDetail.on('mouseenter mouseleave', function () {
+        // Toggle stubs
+        if ( cartDetail.hasClass('cart-detail-active') ) {
+            cartDetail.removeClass('skip-active cart-detail-active');
+            cart.find('a.skip-link').removeClass('a-account-cart-hover');     // for cart - on 'a'
+        } else {
+            cartDetail.addClass('skip-active cart-detail-active');
+            cart.find('a.skip-link').addClass('a-account-cart-hover');        // for cart - on 'a'
+        }
+    });
+
+
+    /////////////////// for search /////////////////
+    var searchInput = $j('#search');
+    // if isset search data
+    if($j(searchInput).val()){
+        $j(searchInput).removeClass('search-input');
+        $j(searchInput).addClass('search-input-hasdata');
+    };
+    $j(searchInput).on('blur', function(){
+        if($j(this).val()) $j(this).addClass('search-input-hasdata');
+    });
+    $j(searchInput).on('focus', function(){
+        $j(this).removeClass('search-input-hasdata');
+    });
+    $j('#btn-search').on('click', function (e) {
+        if(!$j(searchInput).val()) {
+            e.preventDefault();
+            $j(searchInput).toggleClass('search-input', 500);
+        }
+    });
+    $j(document).mouseup(function (e) {
+        var search_form = $j("#search_mini_form");
+        if (search_form.has(e.target).length === 0){
+            if(!$j(searchInput).val()) $j(searchInput).addClass('search-input');
+        }
+    });
+    /////////////////////// END Addtional for design Sport2000 /////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
     $j('#header-cart').on('click', '.skip-link-close', function(e) {
         var parent = $j(this).parents('.skip-content');
         var link = parent.siblings('.skip-link');
