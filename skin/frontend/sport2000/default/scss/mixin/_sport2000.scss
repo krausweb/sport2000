@@ -24,32 +24,31 @@
 //
 
 
-
 // =============================================
 // Mixin - additional for Menu
 // =============================================
 
-// needs for top main menu "ol li.nav-1 ul.level0" for 771px -- @media only screen and(min-width: 771px) { ... }
-@mixin ul-level0-left771() {
+// main top menu "ol li.nav-1 ul.level0" by default
+@mixin ul-level0-left() {
   @for $i from 1 through 6 {
     &.nav-#{$i} ul.level0 {
       @if $i == 1 {
-        left: -92px;
+        left: -104px;
       } @else {
-        left: -92px - (($i - 1) * 100);
+        left: -104px - (($i - 1) * 100);
       }
     }
   }
 }
 
-// needs for top main menu "ol li.nav-1 ul.level0" for by default screen width
-@mixin ul-level0-left() {
+// main top menu "ol li.nav-1 ul.level0" for max width 960
+@mixin ul-level0-left960() {
   @for $i from 1 through 6 {
     &.nav-#{$i} ul.level0 {
       @if $i == 1 {
-        left: -92px;
+        left: -84px;
       } @else {
-        left: -92px - (($i - 1) * 100);
+        left: -84px - (($i - 1) * 80);
       }
     }
   }

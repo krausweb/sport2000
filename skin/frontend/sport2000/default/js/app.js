@@ -810,7 +810,7 @@ $j(document).ready(function () {
     // initialize menu
     MenuManager.init();
 
-    // Prevent sub menus from spilling out of the window.
+    /*// Prevent sub menus from spilling out of the window.
     function preventMenuSpill() {
         var windowWidth = $j(window).width();
         $j('ul.level0').each(function(){
@@ -828,7 +828,7 @@ $j(document).ready(function () {
         });
     }
     preventMenuSpill();
-    $j(window).on('delayed-resize', preventMenuSpill);
+    $j(window).on('delayed-resize', preventMenuSpill);*/
 
 
     // ==============================================

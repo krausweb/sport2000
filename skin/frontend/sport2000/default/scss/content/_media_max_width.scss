@@ -1,0 +1,115 @@
+//
+// Magento
+//
+// NOTICE OF LICENSE
+//
+// This source file is subject to the Academic Free License (AFL 3.0)
+// that is bundled with this package in the file LICENSE_AFL.txt.
+// It is also available through the world-wide-web at this URL:
+// http://opensource.org/licenses/afl-3.0.php
+// If you did not receive a copy of the license and are unable to
+// obtain it through the world-wide-web, please send an email
+// to license@magento.com so we can send you a copy immediately.
+//
+// DISCLAIMER
+//
+// Do not edit or add to this file if you wish to upgrade Magento to newer
+// versions in the future. If you wish to customize Magento for your
+// needs please refer to http://www.magento.com for more information.
+//
+// @category    design
+// @package     sport2000_default
+// @copyright   Copyright (c) 2006-2016 X.commerce, Inc. and affiliates (http://www.magento.com)
+// @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+//
+
+
+/* ============================================ *
+ * All @media only screen and(max-width: XXX)
+ * ============================================ */
+
+@media only screen and(max-width: 479px) {
+  .linearize-table tbody td[data-rwd-label]:before {
+    text-transform: none;
+    font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
+  }
+}
+@media only screen and(max-width: 599px) {
+  .linearize-table-large tbody td[data-rwd-label]:before {
+    text-transform: none;
+    font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
+  }
+}
+@media only screen and(max-width: 770px) {
+  .sidebar .block:not(.block-layered-nav) .block-title {
+    > strong {
+      text-transform: none;
+      font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
+    }
+    &.active > strong {
+      text-transform: none;
+      font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
+    }
+  }
+  #header-account li a {
+    text-transform: none;
+  }
+  .nav-primary a.level0 {
+    text-transform: none;
+  }
+}
+@media only screen and(max-width: 868px) {
+  .page-header-container-top-menu{
+    top: 57px;
+    left: 80%;
+    z-index: 203;
+    /*width: auto !important;*/
+    width: 140px !important;
+    background-color: $color_alto_approx;
+    text-align: center;
+  }
+  .page-header-account-cart{
+    right: 110px;
+  }
+  .page-header-menu-mini {
+    position: absolute;
+    right: 30px;
+    top: 50px;
+    display: block;
+    &:hover{
+      cursor: pointer;
+    }
+
+    & .icon{
+      background-image: $url_isprite;
+      background-position: -72px -64px;
+      background-repeat: no-repeat;
+      text-indent: -9999px;
+      width: 20px;
+      height: 15px;
+      vertical-align: middle;
+      display: inline-block;
+      margin:0 10px 4px 0;
+    }
+  }
+}
+
+
+@media only screen and(max-width: 960px) {
+  .nav-primary {
+    a {
+      &.level0 {
+        width: 80px;
+      }
+    }
+    li.level1 a {
+      padding: 0 17px;
+    }
+  }
+  ol li {
+    @include ul-level0-left960()
+  }
+  .page-header-container-top-menu {
+    width: 412px;
+  }
+}

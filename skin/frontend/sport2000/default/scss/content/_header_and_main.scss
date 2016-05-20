@@ -24,201 +24,8 @@
 //
 
 /* ============================================ *
- * Homepage
+ * Header and main Style
  * ============================================ */
-
-/* -------------------------------------------- *
- * Primary Banner
- */
-
-body.cms-home {
-
-    .main-container {
-        padding-top: 20px;
-    }
-
-    .slideshow-container {
-        margin-top: 0;
-    }
-}
-
-.slideshow .banner-msg {
-    position: absolute;
-    text-align: center;
-    text-transform: uppercase;
-    width: 100%;
-    top: 30%;
-    @include not-selectable;
-}
-
-.slideshow .banner-msg h2 {
-    color: #FFFFFF;
-    font-size: 24px;
-    @include single-text-shadow(1px, 1px, 3px, false, #555555);
-}
-
-.slideshow .banner-msg h2 strong {
-    font-weight: bold;
-    display: block;
-    font-size: 36px;
-}
-
-@include bp(max-width, $bp-medium) {
-
-    .slideshow .banner-msg h2 {
-        font-size: 20px;
-    }
-
-    .slideshow .banner-msg h2 strong {
-        font-size: 24px;
-    }
-}
-
-@include bp(max-width, $bp-xsmall) {
-
-    .slideshow .banner-msg {
-        top: 20%;
-    }
-
-    .slideshow .banner-msg h2 {
-        font-size: 14px;
-    }
-
-    .slideshow .banner-msg h2 strong {
-        font-size: 16px;
-    }
-}
-
-/* -------------------------------------------- *
- * Promotion Banner Section
- */
-
-.promos {
-    margin: 0 0 $gap 0;
-    padding: 0;
-    width: 100%;
-}
-
-.promos:after {
-    @include clearfix;
-}
-
-/* Specifying the body only in order to override the .std ul li styling */
-
-body .promos > li {
-    margin: 0 0 10px 0;
-    list-style: none;
-    text-align: center;
-    position: relative;
-    border: 1px solid $c-module-border;
-    @include not-selectable;
-}
-
-.promos > li:last-child {
-    margin-bottom: 0;
-}
-
-.promos img {
-    max-width: 100%;
-    width: 100%;
-}
-
-.promos a:hover {
-    @include opacity(0.8);
-    display: block;
-}
-
-.promos span {
-    color: #FFFFFF;
-    text-transform: uppercase;
-    position: absolute;
-    display: block;
-    width: 100%;
-    top: 10%;
-    font-weight: 500;
-    font-size: 20px;
-    font-family: $f-stack-special;
-    @include single-text-shadow(1px, 1px, 3px, false, #555555);
-}
-
-.promos strong {
-    font-weight: 600;
-    font-size: 26px;
-    display: block;
-}
-
-@include bp(min-width, $bp-medium + 1) {
-
-    .promos span {
-        font-size: 16px;
-    }
-
-    .promos strong {
-        font-size: 17px;
-    }
-
-    /* Config: Three columns + flexible gutter */
-    // Container: 480 - (2 * 30 trim wide) = 420
-    // Math: (420 - (2 * 10 gutter)) / 3 items = 133.333333333
-    body .promos > li {
-        float: left;
-        width: percentage(133.333333333 / 420);
-        margin-right: percentage(10 / 420);
-    }
-
-    .promos > li:nth-child(3n) {
-        margin-right: 0;
-    }
-}
-
-@include bp(min-width, 880px) {
-    .promos span {
-        font-size: 18px;
-    }
-
-    .promos strong {
-        font-size: 24px;
-    }
-}
-
-/* -------------------------------------------- *
- * New Products Section
- */
-
-/* Hiding the reviews content via CSS because we can't modify the template, */
-/* since it may be used in other places where those elements are needed */
-.cms-index-index .products-grid .ratings,
-.cms-index-index .products-grid .actions,
-.cms-index-noroute .products-grid .ratings,
-.cms-index-noroute .products-grid .actions {
-    display: none;
-}
-
-.cms-index-index h2.subtitle {
-    padding: 6px 0;
-    text-align: center;
-    color: $c-text-primary;
-    font-weight: 600;
-    border-bottom: 1px solid $c-module-border;
-    border-top: 1px solid $c-module-border;
-}
-
-.cms-index-noroute h2.subtitle {
-    display: none;
-}
-
-
-
-
-
-
-
-
-/*************************************************************************************************/
-/********************************** Sport2000 ****************************************************/
-/*************************************************************************************************/
-
-
 
 
 //@extend-elements
@@ -277,6 +84,9 @@ body .promos > li {
     font-weight: bold;
     font-style: normal;
 }
+
+
+
 body {
     @extend %body_main_setting;
     &.customer-account .data-table td a {
@@ -379,6 +189,38 @@ h6 {
     font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
     text-transform: none;
 }
+form {
+    .legend {
+        text-transform: none;
+        font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
+    }
+    .form-instructions {
+        font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
+        font-size: 14px;
+    }
+}
+label {
+    font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
+    font-size: 14px;
+    &.required:after {
+        font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
+    }
+}
+p {
+    &.required {
+        font-size: 14px;
+    }
+    &.product-name a:hover {
+        color: $gray;
+        text-decoration: none;
+    }
+}
+// nav level0 left by default
+ol li {
+    @include ul-level0-left();
+}
+
+
 .item-options {
     font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
     dt {
@@ -412,61 +254,12 @@ h6 {
         @extend %font_main_setting;
     }
 }
-form {
-    .legend {
-        text-transform: none;
-        font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
-    }
-    .form-instructions {
-        font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
-        font-size: 14px;
-    }
-}
-label {
-    font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
-    font-size: 14px;
-    &.required:after {
-        font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
-    }
-}
 .input-text {
     //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
     border-radius: 0;
     border: none;
     border-bottom: 2px solid $gray;
     font-size: 14px;
-}
-@media only screen and(max-device-width: 568px) and(-webkit-min-device-pixel-ratio: 0) {
-    input[type=email] {
-        font-size: 14px;
-    }
-    input[type=search] {
-        font-size: 14px;
-    }
-    input[type=number] {
-        font-size: 14px;
-    }
-    input[type=password] {
-        font-size: 14px;
-    }
-    input[type=tel] {
-        font-size: 14px;
-    }
-    input[type=text] {
-        font-size: 14px;
-    }
-    select {
-        font-size: 14px;
-    }
-}
-p {
-    &.required {
-        font-size: 14px;
-    }
-    &.product-name a:hover {
-        color: $gray;
-        text-decoration: none;
-    }
 }
 .validation-advice {
     font-size: 14px;
@@ -483,132 +276,6 @@ p {
         font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
     }
 }
-@media only screen and(max-width: 479px) {
-    .linearize-table tbody td[data-rwd-label]:before {
-        text-transform: none;
-        font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
-    }
-}
-@media only screen and(max-width: 599px) {
-    .linearize-table-large tbody td[data-rwd-label]:before {
-        text-transform: none;
-        font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
-    }
-}
-@media only screen and(min-width: 771px) {
-    .page-header {
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 0;
-    }
-    .logo {
-        max-width: 116px;
-    }
-    .nav-primary {
-        margin: 0;
-        a {
-            &.level0 {
-                line-height: 35px;
-                // @todo AK - !important for correct width ul.level0
-                width: 100px;
-                text-align: center;
-                padding: 0 0 2px 0;
-                // padding: 0 21px 2px; // original
-            }
-            &:hover {
-                color: $gray;
-            }
-        }
-        li {
-            &.level0 {
-                line-height: 35px;
-                ul {
-                    position: absolute;
-                    top: 37px;
-                    font-size: 15px;
-                    z-index: 10;
-                    padding: 0;
-                    background: none;
-                    border: none;
-                    margin: 0;
-                    display: none;
-                    width: 680px;
-                }
-            }
-            &:hover > a {
-                color: $gray;
-            }
-        }
-    }
-    #header-search {
-        top: 0;
-        right: 30px;
-        height: 35px;
-    }
-    .skip-account {
-        padding: 0;
-        text-transform: none;
-    }
-    #header-account {
-        &.skip-active {
-            background: $white;
-            border: none;
-            border-bottom: solid 1px $color_celeste_approx;
-            top: 32px;
-            right: 138px;
-            width: 134px;
-            line-height: 30px;
-        }
-        a {
-            padding: 0 0 0 30px;
-            color: inherit;
-            line-height: inherit;
-            text-align: left;
-            &:hover {
-                color: $gray;
-                text-decoration: none;
-            }
-        }
-    }
-    .skip-cart {
-        padding: 0;
-        color: $black;
-        text-transform: none;
-        .count {
-            color: $gray;
-            padding-left: 5px;
-            &:before {
-                content: '( ';
-            }
-            &:after {
-                content: ' )';
-            }
-        }
-    }
-    #header-cart.skip-active {
-        border: none;
-        border-bottom: solid 2px $color_celeste_approx;
-        top: 32px;
-        margin: 0;
-        background: $white;
-    }
-    .skip-link.skip-active .count {
-        color: $gray;
-        padding-left: 5px;
-    }
-
-
-    ol li {
-        @include ul-level0-left771()
-    }
-}
-
-// @todo AK - additional by default
-ol li {
-    @include ul-level0-left()
-}
-
-
 .header-language-container {
     font-family: $font_TTLmed, $font_Verdana, $font_Arial, $font_sans_sf;
 }
@@ -682,26 +349,6 @@ ol li {
 .block-content {
     margin-top: 10px;
 }
-@media only screen and(max-width: 770px) {
-    .sidebar .block:not(.block-layered-nav) .block-title {
-        > strong {
-            text-transform: none;
-            font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
-        }
-        &.active > strong {
-            text-transform: none;
-            font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
-        }
-    }
-    #header-account li a {
-        text-transform: none;
-    }
-    .nav-primary a.level0 {
-        text-transform: none;
-    }
-}
-
-
 
 .button {
     @extend %button_main_setting;
@@ -728,6 +375,7 @@ ol li {
 }
 .main-container {
     max-width: 960px;
+    padding: 20px 30px 30px 30px;
 }
 .footer-container {
     max-width: 960px;
@@ -746,31 +394,50 @@ ol li {
         height: 20px;
     }
 }
+
 .nav-primary {
     a {
-        color: $color_storm_dust_approx;
+        color: $black;
         line-height: 30px;
         font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
         text-decoration: none;
         position: relative;
         display: block;
-        color: $black;
+        &:hover {
+            color: $color_alto_approx;
+            text-decoration: none;
+        }
+        &.level0{
+            width: 100px;
+        }
     }
     li {
         &.level1 {
             display: inline-block;
             a {
                 color: $color_alto_approx;
-                padding: 0 15px;
+                padding: 0 27px;
                 border: none;
                 line-height: 35px;
+                &.level1:hover {
+                    color: $color_alto_approx;
+                }
             }
             &:hover {
                 background-color: $color_cardinal_approx;
             }
         }
-        &.level0 > a {
-            text-transform: none;
+        &.level0 {
+            & > a {
+                color: $black;
+                text-transform: none;
+            }
+            & a:hover{
+                color: $gray;
+            }
+        }
+        &:hover > a {
+            color: $gray;
         }
     }
 }
@@ -953,76 +620,6 @@ ol li {
         display: inline-block;
     }
 }
-@media(-webkit-min-device-pixel-ratio: 2),(min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 4 / 2),(min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
-    .icon-sprite {
-        background-image: $url_isprite2x;
-        background-size: 100px 608px;
-    }
-    .btn-remove2 {
-        background-image: $url_isprite2x;
-        background-size: 100px 608px;
-    }
-    .ratings .rating-box {
-        background-image: $url_isprite2x;
-        background-size: 100px 608px;
-        .rating {
-            background-image: $url_isprite2x;
-            background-size: 100px 608px;
-        }
-    }
-    .sorter > {
-        .view-mode {
-            .grid {
-                background-image: $url_isprite2x;
-                background-size: 100px 608px;
-            }
-            .list {
-                background-image: $url_isprite2x;
-                background-size: 100px 608px;
-            }
-        }
-        .sort-by .sort-by-switcher {
-            background-image: $url_isprite2x;
-            background-size: 100px 608px;
-        }
-    }
-    .skip-nav .icon {
-        background-image: $url_isprite2x;
-        background-size: 100px 608px;
-    }
-    .skip-search .icon {
-        background-image: $url_isprite2x;
-        background-size: 100px 608px;
-    }
-    #search_mini_form .search-button:before {
-        background-image: $url_isprite2x;
-        background-size: 100px 608px;
-    }
-    .skip-account .icon {
-        background-image: $url_isprite2x;
-        background-size: 100px 608px;
-    }
-    .skip-cart .icon {
-        background-image: $url_isprite2x;
-        background-size: 100px 608px;
-    }
-    .product-view .sharing-links a {
-        background-image: $url_isprite2x;
-        background-size: 100px 608px;
-    }
-    .review-summary-table .rating-box .rating-number:after {
-        background-image: $url_isprite2x;
-        background-size: 100px 608px;
-    }
-    .ratings-table .rating-box {
-        background-image: $url_isprite2x;
-        background-size: 100px 608px;
-        .rating {
-            background-image: $url_isprite2x;
-            background-size: 100px 608px;
-        }
-    }
-}
 #header-account {
     &.skip-active {
         background: $white;
@@ -1075,11 +672,15 @@ ol li {
     position: relative;
 }
 .page-header-container-top-menu {
-    padding: 15px 0 0 100px;
+    padding: 0;
+    margin-top: 15px;
     font-size: 18px;
     font-weight: bold;
-    width: 640px;
+    width: 518px;
     display: inline-block;
+    position: absolute;
+    left: 140px;
+    z-index: 198;
 }
 .page-header-account-cart {
     top: 40px;
@@ -1093,6 +694,7 @@ ol li {
     min-width: 130px;
     border-bottom: 1px $gray solid;
     color: $gray !important;
+    z-index: 202;
 }
 .skip-link-parent {
     display: inline;
@@ -1226,3 +828,187 @@ span.required:after {
     border-bottom: 3px solid $black_20;
     background-color: $color_lima_approx;
 }
+.page-header-menu-mini{
+    display: none;
+}
+
+
+
+
+
+/*****************************************************************************************************************/
+/******************** Additional for Homepage (banner/slider section) - START ************************************/
+/*****************************************************************************************************************/
+body.cms-home {
+    .slideshow-container {
+        margin-top: 0;
+    }
+}
+
+.slideshow .banner-msg {
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    top: 30%;
+    @include not-selectable;
+}
+
+.slideshow .banner-msg h2 {
+    color: #FFFFFF;
+    font-size: 24px;
+    @include single-text-shadow(1px, 1px, 3px, false, #555555);
+}
+
+.slideshow .banner-msg h2 strong {
+    font-weight: bold;
+    display: block;
+    font-size: 36px;
+}
+
+@include bp(max-width, $bp-medium) {
+
+    .slideshow .banner-msg h2 {
+        font-size: 20px;
+    }
+
+    .slideshow .banner-msg h2 strong {
+        font-size: 24px;
+    }
+}
+
+@include bp(max-width, $bp-xsmall) {
+
+    .slideshow .banner-msg {
+        top: 20%;
+    }
+
+    .slideshow .banner-msg h2 {
+        font-size: 14px;
+    }
+
+    .slideshow .banner-msg h2 strong {
+        font-size: 16px;
+    }
+}
+
+/* -------------------------------------------- *
+ * Promotion Banner Section
+ */
+
+.promos {
+    margin: 0 0 $gap 0;
+    padding: 0;
+    width: 100%;
+}
+
+.promos:after {
+    @include clearfix;
+}
+
+/* Specifying the body only in order to override the .std ul li styling */
+
+body .promos > li {
+    margin: 0 0 10px 0;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    border: 1px solid $c-module-border;
+    @include not-selectable;
+}
+
+.promos > li:last-child {
+    margin-bottom: 0;
+}
+
+.promos img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.promos a:hover {
+    @include opacity(0.8);
+    display: block;
+}
+
+.promos span {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 10%;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: $f-stack-special;
+    @include single-text-shadow(1px, 1px, 3px, false, #555555);
+}
+
+.promos strong {
+    font-weight: 600;
+    font-size: 26px;
+    display: block;
+}
+
+@include bp(min-width, $bp-medium + 1) {
+
+    .promos span {
+        font-size: 16px;
+    }
+
+    .promos strong {
+        font-size: 17px;
+    }
+
+    /* Config: Three columns + flexible gutter */
+    // Container: 480 - (2 * 30 trim wide) = 420
+    // Math: (420 - (2 * 10 gutter)) / 3 items = 133.333333333
+    body .promos > li {
+        float: left;
+        width: percentage(133.333333333 / 420);
+        margin-right: percentage(10 / 420);
+    }
+
+    .promos > li:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+
+@include bp(min-width, 880px) {
+    .promos span {
+        font-size: 18px;
+    }
+
+    .promos strong {
+        font-size: 24px;
+    }
+}
+
+/* -------------------------------------------- *
+ * New Products Section
+ */
+
+/* Hiding the reviews content via CSS because we can't modify the template, */
+/* since it may be used in other places where those elements are needed */
+.cms-index-index .products-grid .ratings,
+.cms-index-index .products-grid .actions,
+.cms-index-noroute .products-grid .ratings,
+.cms-index-noroute .products-grid .actions {
+    display: none;
+}
+
+.cms-index-index h2.subtitle {
+    padding: 6px 0;
+    text-align: center;
+    color: $c-text-primary;
+    font-weight: 600;
+    border-bottom: 1px solid $c-module-border;
+    border-top: 1px solid $c-module-border;
+}
+
+.cms-index-noroute h2.subtitle {
+    display: none;
+}
+/*****************************************************************************************************************/
+/******************** Additional for Homepage (banner/slider section) - END ************************************/
+/*****************************************************************************************************************/

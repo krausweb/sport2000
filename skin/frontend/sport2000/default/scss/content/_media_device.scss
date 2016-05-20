@@ -1,0 +1,123 @@
+//
+// Magento
+//
+// NOTICE OF LICENSE
+//
+// This source file is subject to the Academic Free License (AFL 3.0)
+// that is bundled with this package in the file LICENSE_AFL.txt.
+// It is also available through the world-wide-web at this URL:
+// http://opensource.org/licenses/afl-3.0.php
+// If you did not receive a copy of the license and are unable to
+// obtain it through the world-wide-web, please send an email
+// to license@magento.com so we can send you a copy immediately.
+//
+// DISCLAIMER
+//
+// Do not edit or add to this file if you wish to upgrade Magento to newer
+// versions in the future. If you wish to customize Magento for your
+// needs please refer to http://www.magento.com for more information.
+//
+// @category    design
+// @package     sport2000_default
+// @copyright   Copyright (c) 2006-2016 X.commerce, Inc. and affiliates (http://www.magento.com)
+// @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+//
+
+
+/* ============================================ *
+ * All @media only screen and(min-width: XXX)
+ * ============================================ */
+
+@media only screen and(max-device-width: 568px) and(-webkit-min-device-pixel-ratio: 0) {
+  input[type=email] {
+    font-size: 14px;
+  }
+  input[type=search] {
+    font-size: 14px;
+  }
+  input[type=number] {
+    font-size: 14px;
+  }
+  input[type=password] {
+    font-size: 14px;
+  }
+  input[type=tel] {
+    font-size: 14px;
+  }
+  input[type=text] {
+    font-size: 14px;
+  }
+  select {
+    font-size: 14px;
+  }
+}
+@media(-webkit-min-device-pixel-ratio: 2),(min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 4 / 2),(min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
+  .icon-sprite {
+    background-image: $url_isprite2x;
+    background-size: 100px 608px;
+  }
+  .btn-remove2 {
+    background-image: $url_isprite2x;
+    background-size: 100px 608px;
+  }
+  .ratings .rating-box {
+    background-image: $url_isprite2x;
+    background-size: 100px 608px;
+    .rating {
+      background-image: $url_isprite2x;
+      background-size: 100px 608px;
+    }
+  }
+  .sorter > {
+    .view-mode {
+      .grid {
+        background-image: $url_isprite2x;
+        background-size: 100px 608px;
+      }
+      .list {
+        background-image: $url_isprite2x;
+        background-size: 100px 608px;
+      }
+    }
+    .sort-by .sort-by-switcher {
+      background-image: $url_isprite2x;
+      background-size: 100px 608px;
+    }
+  }
+  .skip-nav .icon {
+    background-image: $url_isprite2x;
+    background-size: 100px 608px;
+  }
+  .skip-search .icon {
+    background-image: $url_isprite2x;
+    background-size: 100px 608px;
+  }
+  #search_mini_form .search-button:before {
+    background-image: $url_isprite2x;
+    background-size: 100px 608px;
+  }
+  .skip-account .icon {
+    background-image: $url_isprite2x;
+    background-size: 100px 608px;
+  }
+  .skip-cart .icon {
+    background-image: $url_isprite2x;
+    background-size: 100px 608px;
+  }
+  .product-view .sharing-links a {
+    background-image: $url_isprite2x;
+    background-size: 100px 608px;
+  }
+  .review-summary-table .rating-box .rating-number:after {
+    background-image: $url_isprite2x;
+    background-size: 100px 608px;
+  }
+  .ratings-table .rating-box {
+    background-image: $url_isprite2x;
+    background-size: 100px 608px;
+    .rating {
+      background-image: $url_isprite2x;
+      background-size: 100px 608px;
+    }
+  }
+}
