@@ -51,6 +51,7 @@
 
         <reference name="head">
             <action method="addJs"><script>lib/jquery/jquery-ui.min.js</script></action>
+            <action method="addItem"><type>skin_js</type><name>js/functions.js</name><params/></action>
 
             <action method="removeItem"><type>skin_css</type><name>css/styles.css</name><params/></action>
             <action method="addItem"><type>skin_css</type><name>css/styles.css</name><params/></action>

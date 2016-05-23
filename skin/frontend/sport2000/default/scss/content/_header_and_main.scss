@@ -332,6 +332,10 @@ ol li {
         text-transform: none;
     }
 }
+.block {
+    margin: 0;
+    border-bottom: $color_gunsmoke_approx 2px solid;
+}
 .block-title {
     h2 {
         text-transform: none;
@@ -348,6 +352,9 @@ ol li {
 }
 .block-content {
     margin-top: 10px;
+}
+.skip-content.skip-active{
+    background-color: $white;
 }
 
 .button {
@@ -392,6 +399,9 @@ ol li {
     .icon {
         width: 15px;
         height: 20px;
+    }
+    &.skip-active .count{
+        color: $gray;
     }
 }
 
@@ -612,6 +622,18 @@ ol li {
     }
     .count {
         font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
+        background-color: inherit;
+        font-size: 14px;
+        top: 0;
+        color: $gray;
+        padding-left: 5px;
+        width: auto;
+        &:before{
+            content: '( ';
+        }
+        &:after{
+            content: ' )';
+        }
     }
     &:not(.skip-active):hover .icon {
         background-position: 0 -30px;
@@ -619,6 +641,9 @@ ol li {
     &.no-count .count {
         display: inline-block;
     }
+}
+.skip-links{
+    border: none;
 }
 #header-account {
     &.skip-active {
@@ -687,12 +712,13 @@ ol li {
     right: 30px;
     width: 290px;
     position: absolute;
+    z-index: 204;
 }
 .a-account-cart-hover {
     background-color: $white;
     height: 32px;
     min-width: 130px;
-    border-bottom: 1px $gray solid;
+    border-bottom: 1px solid $gray !important;
     color: $gray !important;
     z-index: 202;
 }
@@ -831,7 +857,6 @@ span.required:after {
 .page-header-menu-mini{
     display: none;
 }
-
 
 
 

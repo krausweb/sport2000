@@ -53,31 +53,76 @@
   }
   #header-account li a {
     text-transform: none;
+    padding: 0 0 0 27px;
+    border: none;
+    color: $black;
   }
-  .nav-primary a.level0 {
-    text-transform: none;
+  .nav-primary {
+    & a.level0 {
+      text-transform: none;
+    }
+    & li{
+      &.level0 li {
+        padding: 0;
+      }
+      //
+      &.parent > a:after{
+        border-left: 5px solid $color_cardinal_approx;
+      }
+    }
+  }
+  .nav-primary li.parent.sub-menu-active > a:after,
+  .nav-primary li.parent.menu-active > a:after{
+    border-top: 5px solid $color_cardinal_approx;
+  }
+
+  .no-touch #header-account a:hover,
+  .no-touch .nav-primary a:hover{
+    background-color: inherit;
+  }
+
+  .skip-link{
+    border: none;
+    &.skip-active{
+      background-color: inherit;
+      border-bottom: 1px solid $gray;
+    }
   }
 }
 @media only screen and(max-width: 868px) {
   .page-header-container-top-menu{
     top: 57px;
-    left: 80%;
+    left: 80%; // by default
     z-index: 203;
-    /*width: auto !important;*/
-    width: 140px !important;
-    background-color: $color_alto_approx;
+    // width: auto !important;
+    width: 130px !important;
+    background-color: $white;
     text-align: center;
+    display: none;
+    border-bottom: 1px solid $color_celeste_approx;
+    font-size: 14px;
+  }
+  .top-menu-mini-active{
+    display: block;
   }
   .page-header-account-cart{
-    right: 110px;
+    right: 160px;
   }
   .page-header-menu-mini {
     position: absolute;
     right: 30px;
-    top: 50px;
+    top: 40px;
     display: block;
-    &:hover{
+    height: 32px;
+    line-height: 30px;
+    min-width: 130px;
+    text-align: center;
+    padding-top: 4px;
+    &.active{
       cursor: pointer;
+      border-bottom: 1px solid $gray;
+      background-color: $white;
+      color: $gray;
     }
 
     & .icon{
@@ -92,20 +137,46 @@
       margin:0 10px 4px 0;
     }
   }
+
+  .nav-primary {
+    padding: 5px 0;
+    & li {
+      &.level0{
+        line-height: 30px;
+        & ul{
+          position: static;
+          width: 130px;
+          font-size: 14px;
+        }
+      }
+      &.level1:hover{
+        width: 100%;
+      }
+    }
+    & a.level0{
+      line-height: 30px;
+      padding: 0;
+      width: 130px !important;
+
+      border-bottom: none;
+      text-align: center;
+    }
+  }
 }
 
 
 @media only screen and(max-width: 960px) {
   .nav-primary {
-    a {
+    & a {
       &.level0 {
         width: 80px;
       }
     }
-    li.level1 a {
+    & li.level1 a {
       padding: 0 17px;
     }
   }
+
   ol li {
     @include ul-level0-left960()
   }
