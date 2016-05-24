@@ -80,7 +80,7 @@
       border: none;
       border-bottom: solid 1px $color_celeste_approx;
       top: 32px;
-      right: 138px;
+      right: 134px;
       width: 134px;
       line-height: 30px;
     }
@@ -120,5 +120,11 @@
   .skip-link.skip-active .count {
     color: $gray;
     padding-left: 5px;
+  }
+  .main-container{
+    padding: 20px 30px 30px 30px;
+  }
+  .page-header-container-top-align{
+    padding: 25px 0 25px 25px;
   }
 }

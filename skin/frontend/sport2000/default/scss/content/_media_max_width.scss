@@ -28,65 +28,23 @@
  * All @media only screen and(max-width: XXX)
  * ============================================ */
 
-@media only screen and(max-width: 479px) {
-  .linearize-table tbody td[data-rwd-label]:before {
-    text-transform: none;
-    font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
-  }
-}
-@media only screen and(max-width: 599px) {
-  .linearize-table-large tbody td[data-rwd-label]:before {
-    text-transform: none;
-    font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
-  }
-}
-@media only screen and(max-width: 770px) {
-  .sidebar .block:not(.block-layered-nav) .block-title {
-    > strong {
-      text-transform: none;
-      font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
-    }
-    &.active > strong {
-      text-transform: none;
-      font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
-    }
-  }
-  #header-account li a {
-    text-transform: none;
-    padding: 0 0 0 27px;
-    border: none;
-    color: $black;
-  }
+@media only screen and(max-width: 960px) {
   .nav-primary {
-    & a.level0 {
-      text-transform: none;
-    }
-    & li{
-      &.level0 li {
-        padding: 0;
-      }
-      //
-      &.parent > a:after{
-        border-left: 5px solid $color_cardinal_approx;
+    & a {
+      &.level0 {
+        width: 80px;
       }
     }
-  }
-  .nav-primary li.parent.sub-menu-active > a:after,
-  .nav-primary li.parent.menu-active > a:after{
-    border-top: 5px solid $color_cardinal_approx;
-  }
-
-  .no-touch #header-account a:hover,
-  .no-touch .nav-primary a:hover{
-    background-color: inherit;
-  }
-
-  .skip-link{
-    border: none;
-    &.skip-active{
-      background-color: inherit;
-      border-bottom: 1px solid $gray;
+    & li.level1 a {
+      padding: 0 17px;
     }
+  }
+
+  ol li {
+    @include ul-level0-left960()
+  }
+  .page-header-container-top-menu {
+    width: 412px;
   }
 }
 @media only screen and(max-width: 868px) {
@@ -163,24 +121,85 @@
     }
   }
 }
-
-
-@media only screen and(max-width: 960px) {
+@media only screen and(max-width: 770px) {
+  .sidebar .block:not(.block-layered-nav) .block-title {
+    > strong {
+      text-transform: none;
+      font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
+    }
+    &.active > strong {
+      text-transform: none;
+      font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
+    }
+  }
+  #header-account li a {
+    text-transform: none;
+    padding: 0 0 0 27px;
+    border: none;
+    color: $black;
+  }
+  #header-search{
+    right: 15px;
+  }
   .nav-primary {
-    & a {
-      &.level0 {
-        width: 80px;
+    & a.level0 {
+      text-transform: none;
+    }
+    & li{
+      &.level0 li {
+        padding: 0;
+      }
+      //
+      &.parent > a:after{
+        border-left: 5px solid $color_cardinal_approx;
       }
     }
-    & li.level1 a {
-      padding: 0 17px;
+  }
+  .nav-primary li.parent.sub-menu-active > a:after,
+  .nav-primary li.parent.menu-active > a:after{
+    border-top: 5px solid $color_cardinal_approx;
+  }
+  .no-touch #header-account a:hover,
+  .no-touch .nav-primary a:hover{
+    background-color: inherit;
+  }
+  .skip-link{
+    border: none;
+    &.skip-active{
+      background-color: $white;
+      border-bottom: 1px solid $gray;
     }
   }
-
-  ol li {
-    @include ul-level0-left960()
+  .page-header-account-cart{
+    right: 145px;
+    top: 20px; // @todo AK
   }
-  .page-header-container-top-menu {
-    width: 412px;
+  .page-header-menu-mini {
+    right: 15px;
+    top: 20px; // @todo AK
+  }
+  .page-header-container{
+    height: 94px;
+  }
+  .page-header-container-top{
+    height: 57px;
+  }
+  .page-header-container-top-menu{
+    top: 37px
+  }
+  .logo-align{
+    top: 0;
+  }
+}
+@media only screen and(max-width: 599px) {
+  .linearize-table-large tbody td[data-rwd-label]:before {
+    text-transform: none;
+    font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
+  }
+}
+@media only screen and(max-width: 479px) {
+  .linearize-table tbody td[data-rwd-label]:before {
+    text-transform: none;
+    font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
   }
 }

@@ -355,6 +355,11 @@ ol li {
 }
 .skip-content.skip-active{
     background-color: $white;
+    position: absolute;
+    top: 32px;
+    right: 0;
+    z-index: 200;
+    width: 320px;
 }
 
 .button {
@@ -382,7 +387,7 @@ ol li {
 }
 .main-container {
     max-width: 960px;
-    padding: 20px 30px 30px 30px;
+    padding: 20px 15px 15px 15px;
 }
 .footer-container {
     max-width: 960px;
@@ -466,6 +471,8 @@ ol li {
     }
 }
 .header-minicart {
+    display: inline-block;
+
     .minicart-wrapper {
         padding: 10px 16px;
     }
@@ -616,13 +623,14 @@ ol li {
     background-image: $url_isprite;
 }
 .skip-cart {
+    width: auto;
     .icon {
         background-image: $url_isprite;
         background-position: 0 -30px;
     }
     .count {
         font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
-        background-color: inherit;
+        background-color: initial;
         font-size: 14px;
         top: 0;
         color: $gray;
@@ -651,7 +659,7 @@ ol li {
         border: none;
         border-bottom: solid 1px $color_celeste_approx;
         top: 32px;
-        right: 138px;
+        right: 134px;
         width: 134px;
         line-height: 30px;
     }
@@ -663,6 +671,16 @@ ol li {
             text-decoration: none;
         }
     }
+}
+#header-search{
+    top: 0;
+    right: 30px;
+    height: 35px;
+    z-index: 199;
+    display: block;
+    position: absolute;
+    width: 25%;
+    padding: 0;
 }
 .cart-menu {
     .subtotal {
@@ -687,7 +705,7 @@ ol li {
 .page-header-container-top-align {
     max-width: 960px;
     margin: 0 auto;
-    padding: 25px 30px 0;
+    padding: 0;
     position: relative;
 }
 .page-header-container-down-align {
@@ -710,7 +728,7 @@ ol li {
 .page-header-account-cart {
     top: 40px;
     right: 30px;
-    width: 290px;
+    //width: 290px;
     position: absolute;
     z-index: 204;
 }
@@ -721,6 +739,8 @@ ol li {
     border-bottom: 1px solid $gray !important;
     color: $gray !important;
     z-index: 202;
+    // position: absolute;
+    // right: 0;
 }
 .skip-link-parent {
     display: inline;
@@ -728,6 +748,16 @@ ol li {
 .logo-align {
     position: absolute;
     top: 18px;
+}
+.logo {
+    max-width: 116px;
+    min-height: 90px;
+}
+.logo:hover {
+    opacity: 1;
+}
+.logo .large{
+    display: block;
 }
 .icon-arrow-checkout {
     height: 12px;
@@ -776,9 +806,6 @@ span.required:after {
 .breadcrumbs li {
     text-transform: none;
     font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
-}
-.logo:hover {
-    opacity: 1;
 }
 .mini-products-list .product-qty {
     float: left;
@@ -856,6 +883,10 @@ span.required:after {
 }
 .page-header-menu-mini{
     display: none;
+}
+.account-cart-wrapper{
+    position: static;
+    @include display-flex();
 }
 
 

@@ -134,8 +134,12 @@ $j(document).ready(function(){
             menuMini.addClass('active');
             menuTop.addClass('top-menu-mini-active');
 
-            // add align right, when active mini menu
-            menuTop.css('left', $j(window).width() - 130 - 30);
+            if( $j(window).width() < 755 ){
+                // 15 //@media only screen and(max-width: 770px) {
+                menuTop.css('left', $j(window).width() - 130 - 15);
+            }else{
+                menuTop.css('left', $j(window).width() - 130 - 30);
+            }
         }
     });
 
