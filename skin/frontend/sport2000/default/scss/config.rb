@@ -6,5 +6,8 @@ images_dir = "../images"
 javascripts_dir = "../js"
 relative_assets = true
 
-output_style = :expanded
 environment = :production
+output_style = (environment == :production) ? :compressed : :expanded
+#output_style = :expanded
+
+#line_comments = false

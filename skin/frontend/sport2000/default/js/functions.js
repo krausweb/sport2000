@@ -32,6 +32,7 @@ $j(document).ready(function(){
     //////////////// for account /////////////
     var skipContents = $j('.skip-content');
     var skipLinks = $j('.skip-link');
+    skipLinks.on('click', function(e){e.preventDefault()});
 
     skipLinks.on('mouseenter mouseleave', function (e) {
         e.preventDefault();
@@ -119,43 +120,61 @@ $j(document).ready(function(){
     /////////////////// for Cart Detail ////////////////
     var menuMini = $j('.page-header-menu-mini');
     var menuTop = $j('.page-header-container-top-menu');
+    var showMiniMenu = 848 //(@media max-width 868-20)
+        , maxTabletSize = 768 // 755 - for PC (
+        , minTabletSize = 500
+        , paddingMinTablet = 10
+        , paddingMaxTablet = 15
+        , paddingDefault = 30;
 
     menuMini.on('mouseenter mouseleave', function () {
         // Toggle stubs
-        if ( menuMini.hasClass('active') ) {
-            if( !menuTop.hasClass('top-menu-mini-active') ) {
-                menuMini.removeClass('active');
-            }
-
-            // menuTop.removeClass('top-menu-mini-active');
+        if ( menuMini.hasClass('active') && !menuMini.hasClass('active-top') ) {
+            menuMini.removeClass('active');
+            menuTop.removeClass('top-menu-mini-active');
             // remove "align" right when not active mini menu
-            // menuTop.removeAttr('style');
+            menuTop.removeAttr('style');
         } else {
             menuMini.addClass('active');
             menuTop.addClass('top-menu-mini-active');
 
-            if( $j(window).width() < 755 ){
+            if( $j(window).width() < minTabletSize ){
+                // 10 //@media only screen and(max-width: 499px) {
+                menuTop.css('left', $j(window).width() - 130 - paddingMinTablet);
+            }else if( $j(window).width() < maxTabletSize ){
                 // 15 //@media only screen and(max-width: 770px) {
-                menuTop.css('left', $j(window).width() - 130 - 15);
+                menuTop.css('left', $j(window).width() - 130 - paddingMaxTablet);
             }else{
-                menuTop.css('left', $j(window).width() - 130 - 30);
+                menuTop.css('left', $j(window).width() - 130 - paddingDefault);
             }
         }
     });
 
-    menuTop.on('mouseleave', function () {
-        menuMini.removeClass('active');
-        menuTop.removeClass('top-menu-mini-active');
-        // remove "align" right when not active mini menu
-        menuTop.removeAttr('style');
-    });
+        menuTop.on('mouseenter mouseleave', function () {
+            if($j(window).width() < showMiniMenu) {
+                if (menuTop.hasClass('top-menu-mini-active')) {
+                    menuMini.removeClass('active');
+                    menuMini.removeClass('active-top'); // !!!
+                    menuTop.removeClass('top-menu-mini-active');
+                    // remove "align" right when not active mini menu
+                    menuTop.removeAttr('style');
+                } else {
+                    menuMini.addClass('active');
+                    menuMini.addClass('active-top');    // !!!
+                    menuTop.addClass('top-menu-mini-active');
+                    if ($j(window).width() < minTabletSize) {
+                        // 10 //@media only screen and(max-width: 499px) {
+                        menuTop.css('left', $j(window).width() - 130 - paddingMinTablet);
+                    } else if ($j(window).width() < maxTabletSize) {
+                        // 15 //@media only screen and(max-width: 770px) {
+                        menuTop.css('left', $j(window).width() - 130 - paddingMaxTablet);
+                    } else {
+                        menuTop.css('left', $j(window).width() - 130 - paddingDefault);
+                    }
+                }
+            }
+        });
+    //////////////////////////////////////////////////////////////
 
-    // @todo AK - checking hidden menu-mini on top,left,right
-    /*$j( menuMini ).on( "mousemove", function(e) {
-         if(e.pageY < 41) {
-             console.log(e.pageY);
-             menuMini.removeClass('active');
-         }
-         console.log( "pageX: " + e.pageX + ", pageY: " + e.pageY );
-     });*/
+
 });

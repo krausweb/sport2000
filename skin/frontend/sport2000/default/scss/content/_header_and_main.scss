@@ -27,6 +27,9 @@
  * Header and main Style
  * ============================================ */
 
+// @import "compass/utilities/sprites";
+// @import "ico/*.png";
+// @include all-ico-sprites;
 
 //@extend-elements
 //original selectors
@@ -630,8 +633,9 @@ ol li {
     }
     .count {
         font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
-        background-color: initial;
+        background-color: inherit;
         font-size: 14px;
+
         top: 0;
         color: $gray;
         padding-left: 5px;
@@ -750,8 +754,7 @@ ol li {
     top: 18px;
 }
 .logo {
-    max-width: 116px;
-    min-height: 90px;
+    width: 116px;
 }
 .logo:hover {
     opacity: 1;
@@ -816,6 +819,8 @@ span.required:after {
     padding-top: 2px;
 }
 #search_mini_form .search-button {
+    padding: 0;
+    margin: 0;
     height: 35px;
     border-bottom: 2px solid $black_20;
     background-color: $color_cardinal_approx;
@@ -880,6 +885,9 @@ span.required:after {
     float: right;
     border-bottom: 3px solid $black_20;
     background-color: $color_lima_approx;
+    &:hover{
+        background-color: #7CC700;
+    }
 }
 .page-header-menu-mini{
     display: none;

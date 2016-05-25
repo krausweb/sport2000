@@ -95,7 +95,6 @@
       margin:0 10px 4px 0;
     }
   }
-
   .nav-primary {
     padding: 5px 0;
     & li {
@@ -120,6 +119,9 @@
       text-align: center;
     }
   }
+  #header-search{
+    width: 40%;
+  }
 }
 @media only screen and(max-width: 770px) {
   .sidebar .block:not(.block-layered-nav) .block-title {
@@ -140,6 +142,7 @@
   }
   #header-search{
     right: 15px;
+    width: 50%;
   }
   .nav-primary {
     & a.level0 {
@@ -172,11 +175,11 @@
   }
   .page-header-account-cart{
     right: 145px;
-    top: 20px; // @todo AK
+    top: 20px;
   }
   .page-header-menu-mini {
     right: 15px;
-    top: 20px; // @todo AK
+    top: 20px;
   }
   .page-header-container{
     height: 94px;
@@ -185,16 +188,85 @@
     height: 57px;
   }
   .page-header-container-top-menu{
-    top: 37px
+    top: 52px;
+    margin-top: 0;
   }
   .logo-align{
-    top: 0;
+    top: -2px;
   }
 }
 @media only screen and(max-width: 599px) {
   .linearize-table-large tbody td[data-rwd-label]:before {
     text-transform: none;
     font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
+  }
+}
+@media only screen and(max-width: 499px) {
+  .page-header-container{
+    height: 75px;
+  }
+  .page-header-container-top{
+    height: 43px;
+  }
+  .logo{
+    width: 91px;
+    min-width: 91px;
+    padding: 9px 10px 0 10px;
+  }
+  .page-header-container-top-menu{
+    top: 40px;
+  }
+  .page-header-account-cart{
+    right: 42px;
+    top: 8px;
+  }
+  a.skip-link{
+    min-width: 50px;
+  }
+  .skip-cart{
+    & .count {
+      display: none;
+    }
+    &.no-count .count{
+      display: none;
+    }
+  }
+
+  .skip-account{
+    display: none;
+  }
+  .page-header-menu-mini{
+    min-width: 32px;
+    top: 8px;
+    right: 10px;
+    & .icon{
+      margin: 0 0 4px 0;
+    }
+    & .label{
+      display: none;
+    }
+  }
+  .page-header-container-down{
+    height: 30px;
+  }
+  #header-search{
+    height: 30px;
+    width: 66%;
+    right: 10px;
+  }
+  #search{
+    height: 30px;
+  }
+  #search_mini_form .search-button{
+    width: 32px;
+    height: 30px;
+    &:before{
+      margin-left: -16px;
+      width: 32px;
+    }
+    &:active:before {
+      margin-left: -16px;
+    }
   }
 }
 @media only screen and(max-width: 479px) {
