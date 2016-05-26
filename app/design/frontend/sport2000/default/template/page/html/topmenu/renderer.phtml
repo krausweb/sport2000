@@ -41,6 +41,8 @@ $parentPositionClass = $menuTree->getPositionClass();
 $itemPositionClassPrefix = $parentPositionClass ? $parentPositionClass . '-' : 'nav-';
 
 foreach ($children as $child) {
+    if($counter > 4) continue;  // "check" long list level0 menu
+
     $child->setLevel($childLevel);
     $child->setIsFirst($counter == 1);
     $child->setIsLast($counter == $childrenCount);

@@ -403,10 +403,7 @@ ol li.nav-6 ul.level0 {
   height: 32px;
   line-height: 30px;
   background: none;
-  color: black;
-  /*& .label{ // @todo AK
-      display: inline;
-  }*/ }
+  color: black; }
   /* line 407, ../scss/content/_header_and_main.scss */
   .skip-link .icon {
     width: 15px;
@@ -415,7 +412,7 @@ ol li.nav-6 ul.level0 {
   .skip-link.skip-active .count {
     color: gray; }
 
-/* line 420, ../scss/content/_header_and_main.scss */
+/* line 417, ../scss/content/_header_and_main.scss */
 .nav-primary a {
   color: black;
   line-height: 30px;
@@ -423,95 +420,95 @@ ol li.nav-6 ul.level0 {
   text-decoration: none;
   position: relative;
   display: block; }
-  /* line 427, ../scss/content/_header_and_main.scss */
+  /* line 424, ../scss/content/_header_and_main.scss */
   .nav-primary a:hover {
     color: #d9d9d9;
     text-decoration: none; }
-  /* line 431, ../scss/content/_header_and_main.scss */
+  /* line 428, ../scss/content/_header_and_main.scss */
   .nav-primary a.level0 {
     width: 100px; }
-/* line 436, ../scss/content/_header_and_main.scss */
+/* line 433, ../scss/content/_header_and_main.scss */
 .nav-primary li.level1 {
   display: inline-block; }
-  /* line 438, ../scss/content/_header_and_main.scss */
+  /* line 435, ../scss/content/_header_and_main.scss */
   .nav-primary li.level1 a {
     color: #d9d9d9;
     padding: 0 27px;
     border: none;
     line-height: 35px; }
-    /* line 443, ../scss/content/_header_and_main.scss */
+    /* line 440, ../scss/content/_header_and_main.scss */
     .nav-primary li.level1 a.level1:hover {
       color: #d9d9d9; }
-  /* line 447, ../scss/content/_header_and_main.scss */
+  /* line 444, ../scss/content/_header_and_main.scss */
   .nav-primary li.level1:hover {
     background-color: #c41230; }
-/* line 452, ../scss/content/_header_and_main.scss */
+/* line 449, ../scss/content/_header_and_main.scss */
 .nav-primary li.level0 > a {
   color: black;
   text-transform: none; }
-/* line 456, ../scss/content/_header_and_main.scss */
+/* line 453, ../scss/content/_header_and_main.scss */
 .nav-primary li.level0 a:hover {
   color: gray; }
-/* line 460, ../scss/content/_header_and_main.scss */
+/* line 457, ../scss/content/_header_and_main.scss */
 .nav-primary li:hover > a {
   color: gray; }
 
-/* line 466, ../scss/content/_header_and_main.scss */
+/* line 463, ../scss/content/_header_and_main.scss */
 .block-layered-nav .block-subtitle--filter {
   text-transform: none;
   font-family: TitilliumText22L_Regular, Verdana, Arial, sans-serif; }
-/* line 470, ../scss/content/_header_and_main.scss */
+/* line 467, ../scss/content/_header_and_main.scss */
 .block-layered-nav .block-content > dl > dt {
   text-transform: none;
   font-family: TitilliumText22L_Regular, Verdana, Arial, sans-serif; }
-/* line 474, ../scss/content/_header_and_main.scss */
+/* line 471, ../scss/content/_header_and_main.scss */
 .block-layered-nav .currently .block-subtitle {
   text-transform: none;
   font-family: TitilliumText22L_Regular, Verdana, Arial, sans-serif; }
 
-/* line 479, ../scss/content/_header_and_main.scss */
+/* line 476, ../scss/content/_header_and_main.scss */
 .header-minicart {
   display: inline-block; }
-  /* line 482, ../scss/content/_header_and_main.scss */
+  /* line 479, ../scss/content/_header_and_main.scss */
   .header-minicart .minicart-wrapper {
     padding: 10px 16px; }
-  /* line 485, ../scss/content/_header_and_main.scss */
+  /* line 482, ../scss/content/_header_and_main.scss */
   .header-minicart .block-subtitle {
     text-transform: none;
     font-family: TitilliumText22L_Regular, Verdana, Arial, sans-serif; }
-  /* line 489, ../scss/content/_header_and_main.scss */
+  /* line 486, ../scss/content/_header_and_main.scss */
   .header-minicart .mini-products-list {
     padding: 0; }
-    /* line 491, ../scss/content/_header_and_main.scss */
+    /* line 488, ../scss/content/_header_and_main.scss */
     .header-minicart .mini-products-list li {
       padding: 10px 0 5px;
       margin: 0; }
-  /* line 496, ../scss/content/_header_and_main.scss */
+  /* line 493, ../scss/content/_header_and_main.scss */
   .header-minicart .info-wrapper {
     margin: 0; }
-    /* line 498, ../scss/content/_header_and_main.scss */
+    /* line 495, ../scss/content/_header_and_main.scss */
     .header-minicart .info-wrapper th {
       text-transform: none;
       padding: 0; }
-    /* line 502, ../scss/content/_header_and_main.scss */
+    /* line 499, ../scss/content/_header_and_main.scss */
     .header-minicart .info-wrapper td {
       color: gray; }
-  /* line 506, ../scss/content/_header_and_main.scss */
+  /* line 503, ../scss/content/_header_and_main.scss */
   .header-minicart .subtotal {
     line-height: 34px;
     text-align: left;
     background: none; }
-    /* line 510, ../scss/content/_header_and_main.scss */
+    /* line 507, ../scss/content/_header_and_main.scss */
     .header-minicart .subtotal .label {
       color: gray;
       min-width: 57px;
       display: inline-block;
       text-transform: none; }
-    /* line 516, ../scss/content/_header_and_main.scss */
+    /* line 513, ../scss/content/_header_and_main.scss */
     .header-minicart .subtotal .price {
       padding: 0 20px 0 0;
       color: black; }
-  /* line 521, ../scss/content/_header_and_main.scss */
+  /* line 518, ../scss/content/_header_and_main.scss */
   .header-minicart .product-details .product-name {
     padding: 0;
     margin: 0 0 5px 0;
@@ -519,38 +516,38 @@ ol li.nav-6 ul.level0 {
     font-weight: normal;
     color: black;
     text-transform: none; }
-    /* line 528, ../scss/content/_header_and_main.scss */
+    /* line 525, ../scss/content/_header_and_main.scss */
     .header-minicart .product-details .product-name a {
       color: black; }
-      /* line 530, ../scss/content/_header_and_main.scss */
+      /* line 527, ../scss/content/_header_and_main.scss */
       .header-minicart .product-details .product-name a:hover {
         color: gray; }
-  /* line 535, ../scss/content/_header_and_main.scss */
+  /* line 532, ../scss/content/_header_and_main.scss */
   .header-minicart .minicart-actions .cart-link {
     text-transform: none;
     font-size: 14px; }
 
-/* line 540, ../scss/content/_header_and_main.scss */
+/* line 537, ../scss/content/_header_and_main.scss */
 .search-autocomplete {
   top: 0 !important; }
-  /* line 542, ../scss/content/_header_and_main.scss */
+  /* line 539, ../scss/content/_header_and_main.scss */
   .search-autocomplete ul {
     border: 1px solid gray; }
-    /* line 544, ../scss/content/_header_and_main.scss */
+    /* line 541, ../scss/content/_header_and_main.scss */
     .search-autocomplete ul li {
       color: black; }
-      /* line 546, ../scss/content/_header_and_main.scss */
+      /* line 543, ../scss/content/_header_and_main.scss */
       .search-autocomplete ul li:hover {
         color: gray; }
-      /* line 549, ../scss/content/_header_and_main.scss */
+      /* line 546, ../scss/content/_header_and_main.scss */
       .search-autocomplete ul li.selected {
         background-color: inherit;
         color: inherit; }
-  /* line 555, ../scss/content/_header_and_main.scss */
+  /* line 552, ../scss/content/_header_and_main.scss */
   .search-autocomplete:before {
     border-bottom: none; }
 
-/* line 559, ../scss/content/_header_and_main.scss */
+/* line 556, ../scss/content/_header_and_main.scss */
 .search-autocomplete-estimate {
   background-image: url(../images/ajax-loader.gif);
   background-repeat: no-repeat;
@@ -566,29 +563,29 @@ ol li.nav-6 ul.level0 {
   display: none;
   cursor: wait; }
 
-/* line 575, ../scss/content/_header_and_main.scss */
+/* line 572, ../scss/content/_header_and_main.scss */
 .product-review .ratings-table {
   font-family: TitilliumText22L_Regular, Verdana, Arial, sans-serif; }
-  /* line 577, ../scss/content/_header_and_main.scss */
+  /* line 574, ../scss/content/_header_and_main.scss */
   .product-review .ratings-table tr {
     text-transform: none; }
-/* line 582, ../scss/content/_header_and_main.scss */
+/* line 579, ../scss/content/_header_and_main.scss */
 .product-review .ratings-description dt {
   text-transform: none;
   font-family: TitilliumText22L_Regular, Verdana, Arial, sans-serif; }
-/* line 586, ../scss/content/_header_and_main.scss */
+/* line 583, ../scss/content/_header_and_main.scss */
 .product-review .ratings-description dd {
   font-family: TitilliumText22L_Regular, Verdana, Arial, sans-serif;
   font-size: 14px; }
-/* line 591, ../scss/content/_header_and_main.scss */
+/* line 588, ../scss/content/_header_and_main.scss */
 .product-review .product-img-box p.label {
   text-transform: none;
   font-family: TitilliumText22L_Regular, Verdana, Arial, sans-serif; }
-/* line 595, ../scss/content/_header_and_main.scss */
+/* line 592, ../scss/content/_header_and_main.scss */
 .product-review .product-details h2 {
   font-family: TitilliumText22L_Regular, Verdana, Arial, sans-serif; }
 
-/* line 599, ../scss/content/_header_and_main.scss */
+/* line 596, ../scss/content/_header_and_main.scss */
 #search {
   height: 35px;
   padding: 4px 40px 0 8px;
@@ -596,43 +593,43 @@ ol li.nav-6 ul.level0 {
   border-bottom: 2px solid rgba(128, 128, 128, 0.2);
   font-family: TitilliumText22L_Regular, Verdana, Arial, sans-serif; }
 
-/* line 606, ../scss/content/_header_and_main.scss */
+/* line 603, ../scss/content/_header_and_main.scss */
 .search-input {
   display: none; }
 
-/* line 609, ../scss/content/_header_and_main.scss */
+/* line 606, ../scss/content/_header_and_main.scss */
 .search-input-hasdata {
   font-style: italic;
   color: gray; }
 
-/* line 613, ../scss/content/_header_and_main.scss */
+/* line 610, ../scss/content/_header_and_main.scss */
 .search-input-visible {
   display: inline-block; }
 
-/* line 617, ../scss/content/_header_and_main.scss */
+/* line 614, ../scss/content/_header_and_main.scss */
 .skip-account .icon {
   background-position: 0 0;
   background-image: url(../images/icon_sprite.png); }
-/* line 621, ../scss/content/_header_and_main.scss */
+/* line 618, ../scss/content/_header_and_main.scss */
 .skip-account:not(.skip-active):hover .icon {
   background-position: 0 0; }
 
-/* line 625, ../scss/content/_header_and_main.scss */
+/* line 622, ../scss/content/_header_and_main.scss */
 .icon-sprite {
   background-image: url(../images/icon_sprite.png); }
 
-/* line 628, ../scss/content/_header_and_main.scss */
+/* line 625, ../scss/content/_header_and_main.scss */
 .btn-remove2 {
   background-image: url(../images/icon_sprite.png); }
 
-/* line 631, ../scss/content/_header_and_main.scss */
+/* line 628, ../scss/content/_header_and_main.scss */
 .skip-cart {
   width: auto; }
-  /* line 633, ../scss/content/_header_and_main.scss */
+  /* line 630, ../scss/content/_header_and_main.scss */
   .skip-cart .icon {
     background-image: url(../images/icon_sprite.png);
     background-position: 0 -30px; }
-  /* line 637, ../scss/content/_header_and_main.scss */
+  /* line 634, ../scss/content/_header_and_main.scss */
   .skip-cart .count {
     font-family: TitilliumText22L_Regular, Verdana, Arial, sans-serif;
     background-color: inherit;
@@ -641,24 +638,24 @@ ol li.nav-6 ul.level0 {
     color: gray;
     padding-left: 5px;
     width: auto; }
-    /* line 646, ../scss/content/_header_and_main.scss */
+    /* line 643, ../scss/content/_header_and_main.scss */
     .skip-cart .count:before {
       content: '( '; }
-    /* line 649, ../scss/content/_header_and_main.scss */
+    /* line 646, ../scss/content/_header_and_main.scss */
     .skip-cart .count:after {
       content: ' )'; }
-  /* line 653, ../scss/content/_header_and_main.scss */
+  /* line 650, ../scss/content/_header_and_main.scss */
   .skip-cart:not(.skip-active):hover .icon {
     background-position: 0 -30px; }
-  /* line 656, ../scss/content/_header_and_main.scss */
+  /* line 653, ../scss/content/_header_and_main.scss */
   .skip-cart.no-count .count {
     display: inline-block; }
 
-/* line 660, ../scss/content/_header_and_main.scss */
+/* line 657, ../scss/content/_header_and_main.scss */
 .skip-links {
   border: none; }
 
-/* line 664, ../scss/content/_header_and_main.scss */
+/* line 661, ../scss/content/_header_and_main.scss */
 #header-account.skip-active {
   background: white;
   border: none;
@@ -667,16 +664,16 @@ ol li.nav-6 ul.level0 {
   right: 134px;
   width: 134px;
   line-height: 30px; }
-/* line 673, ../scss/content/_header_and_main.scss */
+/* line 670, ../scss/content/_header_and_main.scss */
 #header-account a {
   padding: 0 30px;
   text-align: left; }
-  /* line 676, ../scss/content/_header_and_main.scss */
+  /* line 673, ../scss/content/_header_and_main.scss */
   #header-account a:hover {
     color: gray;
     text-decoration: none; }
 
-/* line 682, ../scss/content/_header_and_main.scss */
+/* line 679, ../scss/content/_header_and_main.scss */
 #header-search {
   top: 0;
   right: 30px;
@@ -687,43 +684,43 @@ ol li.nav-6 ul.level0 {
   width: 25%;
   padding: 0; }
 
-/* line 693, ../scss/content/_header_and_main.scss */
+/* line 690, ../scss/content/_header_and_main.scss */
 .cart-menu .subtotal {
   font-family: TitilliumText22L_Regular, Verdana, Arial, sans-serif; }
-/* line 696, ../scss/content/_header_and_main.scss */
+/* line 693, ../scss/content/_header_and_main.scss */
 .cart-menu .last-added {
   font-size: 14px; }
 
-/* line 700, ../scss/content/_header_and_main.scss */
+/* line 697, ../scss/content/_header_and_main.scss */
 .page-header-container {
   height: 114px; }
 
-/* line 703, ../scss/content/_header_and_main.scss */
+/* line 700, ../scss/content/_header_and_main.scss */
 .page-header-container-top {
   height: 77px;
   background-color: #f2f2f2;
   border-bottom: #858687 2px solid; }
 
-/* line 708, ../scss/content/_header_and_main.scss */
+/* line 705, ../scss/content/_header_and_main.scss */
 .page-header-container-down {
   height: 35px;
   background-color: black; }
 
-/* line 712, ../scss/content/_header_and_main.scss */
+/* line 709, ../scss/content/_header_and_main.scss */
 .page-header-container-top-align {
   max-width: 960px;
   margin: 0 auto;
   padding: 0;
   position: relative; }
 
-/* line 718, ../scss/content/_header_and_main.scss */
+/* line 715, ../scss/content/_header_and_main.scss */
 .page-header-container-down-align {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 30px 0 155px;
   position: relative; }
 
-/* line 724, ../scss/content/_header_and_main.scss */
+/* line 721, ../scss/content/_header_and_main.scss */
 .page-header-container-top-menu {
   padding: 0;
   margin-top: 15px;
@@ -735,14 +732,14 @@ ol li.nav-6 ul.level0 {
   left: 140px;
   z-index: 198; }
 
-/* line 735, ../scss/content/_header_and_main.scss */
+/* line 732, ../scss/content/_header_and_main.scss */
 .page-header-account-cart {
   top: 40px;
   right: 30px;
   position: absolute;
   z-index: 204; }
 
-/* line 742, ../scss/content/_header_and_main.scss */
+/* line 739, ../scss/content/_header_and_main.scss */
 .a-account-cart-hover {
   background-color: white;
   height: 32px;
@@ -751,28 +748,28 @@ ol li.nav-6 ul.level0 {
   color: gray !important;
   z-index: 202; }
 
-/* line 752, ../scss/content/_header_and_main.scss */
+/* line 749, ../scss/content/_header_and_main.scss */
 .skip-link-parent {
   display: inline; }
 
-/* line 755, ../scss/content/_header_and_main.scss */
+/* line 752, ../scss/content/_header_and_main.scss */
 .logo-align {
   position: absolute;
   top: 18px; }
 
-/* line 759, ../scss/content/_header_and_main.scss */
+/* line 756, ../scss/content/_header_and_main.scss */
 .logo {
   width: 116px; }
 
-/* line 763, ../scss/content/_header_and_main.scss */
+/* line 759, ../scss/content/_header_and_main.scss */
 .logo:hover {
   opacity: 1; }
 
-/* line 766, ../scss/content/_header_and_main.scss */
+/* line 762, ../scss/content/_header_and_main.scss */
 .logo .large {
   display: block; }
 
-/* line 769, ../scss/content/_header_and_main.scss */
+/* line 765, ../scss/content/_header_and_main.scss */
 .icon-arrow-checkout {
   height: 12px;
   width: 8px;
@@ -780,51 +777,51 @@ ol li.nav-6 ul.level0 {
   background-position: -32px -105px;
   margin: 0 0 -1px 12px; }
 
-/* line 776, ../scss/content/_header_and_main.scss */
+/* line 772, ../scss/content/_header_and_main.scss */
 .truncated .truncated_full_value .item-options > p {
   text-transform: none; }
 
-/* line 779, ../scss/content/_header_and_main.scss */
+/* line 775, ../scss/content/_header_and_main.scss */
 .std .note {
   font-size: 14px; }
 
-/* line 782, ../scss/content/_header_and_main.scss */
+/* line 778, ../scss/content/_header_and_main.scss */
 .pager-no-toolbar label {
   text-transform: none; }
 
-/* line 785, ../scss/content/_header_and_main.scss */
+/* line 781, ../scss/content/_header_and_main.scss */
 span.required:after {
   font-family: TitilliumText22L_Regular, Verdana, Arial, sans-serif; }
 
-/* line 788, ../scss/content/_header_and_main.scss */
+/* line 784, ../scss/content/_header_and_main.scss */
 .info-box h2 {
   font-size: 14px; }
 
-/* line 791, ../scss/content/_header_and_main.scss */
+/* line 787, ../scss/content/_header_and_main.scss */
 .block-account li {
   text-transform: none;
   font-family: TitilliumText22L_Regular, Verdana, Arial, sans-serif; }
 
-/* line 795, ../scss/content/_header_and_main.scss */
+/* line 791, ../scss/content/_header_and_main.scss */
 .block-cms-menu li {
   text-transform: none;
   font-family: TitilliumText22L_Regular, Verdana, Arial, sans-serif; }
 
-/* line 805, ../scss/content/_header_and_main.scss */
+/* line 801, ../scss/content/_header_and_main.scss */
 .button2 span {
   text-transform: none;
   font-family: TitilliumText22L_Regular, Verdana, Arial, sans-serif; }
-  /* line 808, ../scss/content/_header_and_main.scss */
+  /* line 804, ../scss/content/_header_and_main.scss */
   .button2 span span {
     text-transform: none;
     font-family: TitilliumText22L_Regular, Verdana, Arial, sans-serif; }
 
-/* line 813, ../scss/content/_header_and_main.scss */
+/* line 809, ../scss/content/_header_and_main.scss */
 .breadcrumbs li {
   text-transform: none;
   font-family: TitilliumText22L_Regular, Verdana, Arial, sans-serif; }
 
-/* line 817, ../scss/content/_header_and_main.scss */
+/* line 813, ../scss/content/_header_and_main.scss */
 .mini-products-list .product-qty {
   float: left;
   min-width: 50px;
@@ -833,87 +830,87 @@ span.required:after {
   letter-spacing: -2px;
   padding-top: 2px; }
 
-/* line 825, ../scss/content/_header_and_main.scss */
+/* line 821, ../scss/content/_header_and_main.scss */
 #search_mini_form .search-button {
   padding: 0;
   margin: 0;
   height: 35px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.2);
   background-color: #c41230; }
-  /* line 831, ../scss/content/_header_and_main.scss */
+  /* line 827, ../scss/content/_header_and_main.scss */
   #search_mini_form .search-button:hover {
     background-color: #e41232;
     transition: 2ms; }
-    /* line 835, ../scss/content/_header_and_main.scss */
+    /* line 831, ../scss/content/_header_and_main.scss */
     #search_mini_form .search-button:hover:before {
       opacity: 1; }
-  /* line 839, ../scss/content/_header_and_main.scss */
+  /* line 835, ../scss/content/_header_and_main.scss */
   #search_mini_form .search-button:before {
     background-position: -63px -97px;
     background-image: url(../images/icon_sprite.png); }
-  /* line 843, ../scss/content/_header_and_main.scss */
+  /* line 839, ../scss/content/_header_and_main.scss */
   #search_mini_form .search-button:active:before {
     margin-top: -15px;
     margin-left: -15px; }
 
-/* line 848, ../scss/content/_header_and_main.scss */
+/* line 844, ../scss/content/_header_and_main.scss */
 .ratings .rating-box {
   background-image: url(../images/icon_sprite.png); }
-  /* line 850, ../scss/content/_header_and_main.scss */
+  /* line 846, ../scss/content/_header_and_main.scss */
   .ratings .rating-box .rating {
     background-image: url(../images/icon_sprite.png); }
 
-/* line 856, ../scss/content/_header_and_main.scss */
+/* line 852, ../scss/content/_header_and_main.scss */
 .sorter > .view-mode .grid {
   background-image: url(../images/icon_sprite.png); }
-/* line 859, ../scss/content/_header_and_main.scss */
+/* line 855, ../scss/content/_header_and_main.scss */
 .sorter > .view-mode .list {
   background-image: url(../images/icon_sprite.png); }
-/* line 863, ../scss/content/_header_and_main.scss */
+/* line 859, ../scss/content/_header_and_main.scss */
 .sorter > .sort-by .sort-by-switcher {
   background-image: url(../images/icon_sprite.png); }
 
-/* line 867, ../scss/content/_header_and_main.scss */
+/* line 863, ../scss/content/_header_and_main.scss */
 .skip-nav .icon {
   background-image: url(../images/icon_sprite.png); }
 
-/* line 870, ../scss/content/_header_and_main.scss */
+/* line 866, ../scss/content/_header_and_main.scss */
 .skip-search .icon {
   background-image: url(../images/icon_sprite.png); }
 
-/* line 873, ../scss/content/_header_and_main.scss */
+/* line 869, ../scss/content/_header_and_main.scss */
 .product-view .sharing-links a {
   background-image: url(../images/icon_sprite.png); }
 
-/* line 876, ../scss/content/_header_and_main.scss */
+/* line 872, ../scss/content/_header_and_main.scss */
 .review-summary-table .rating-box .rating-number:after {
   background-image: url(../images/icon_sprite.png); }
 
-/* line 879, ../scss/content/_header_and_main.scss */
+/* line 875, ../scss/content/_header_and_main.scss */
 .ratings-table .rating-box {
   background-image: url(../images/icon_sprite.png); }
-  /* line 881, ../scss/content/_header_and_main.scss */
+  /* line 877, ../scss/content/_header_and_main.scss */
   .ratings-table .rating-box .rating {
     background-image: url(../images/icon_sprite.png); }
 
-/* line 885, ../scss/content/_header_and_main.scss */
+/* line 881, ../scss/content/_header_and_main.scss */
 .mini-cart-list li {
   font-size: 14px; }
 
-/* line 888, ../scss/content/_header_and_main.scss */
+/* line 884, ../scss/content/_header_and_main.scss */
 .subtotal .checkout-button {
   float: right;
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   background-color: #74bd00; }
-  /* line 892, ../scss/content/_header_and_main.scss */
+  /* line 888, ../scss/content/_header_and_main.scss */
   .subtotal .checkout-button:hover {
     background-color: #7CC700; }
 
-/* line 896, ../scss/content/_header_and_main.scss */
+/* line 892, ../scss/content/_header_and_main.scss */
 .page-header-menu-mini {
   display: none; }
 
-/* line 899, ../scss/content/_header_and_main.scss */
+/* line 895, ../scss/content/_header_and_main.scss */
 .account-cart-wrapper {
   position: static;
   display: -webkit-flex;
@@ -922,11 +919,11 @@ span.required:after {
 /*****************************************************************************************************************/
 /******************** Additional for Homepage (banner/slider section) - START ************************************/
 /*****************************************************************************************************************/
-/* line 911, ../scss/content/_header_and_main.scss */
+/* line 907, ../scss/content/_header_and_main.scss */
 body.cms-home .slideshow-container {
   margin-top: 0; }
 
-/* line 916, ../scss/content/_header_and_main.scss */
+/* line 912, ../scss/content/_header_and_main.scss */
 .slideshow .banner-msg {
   position: absolute;
   text-align: center;
@@ -939,55 +936,55 @@ body.cms-home .slideshow-container {
   -o-user-select: none;
   user-select: none; }
 
-/* line 925, ../scss/content/_header_and_main.scss */
+/* line 921, ../scss/content/_header_and_main.scss */
 .slideshow .banner-msg h2 {
   color: #FFFFFF;
   font-size: 24px;
   text-shadow: 1px 1px 3px #555555; }
 
-/* line 931, ../scss/content/_header_and_main.scss */
+/* line 927, ../scss/content/_header_and_main.scss */
 .slideshow .banner-msg h2 strong {
   font-weight: bold;
   display: block;
   font-size: 36px; }
 
 @media only screen and (max-width: 770px) {
-  /* line 939, ../scss/content/_header_and_main.scss */
+  /* line 935, ../scss/content/_header_and_main.scss */
   .slideshow .banner-msg h2 {
     font-size: 20px; }
 
-  /* line 943, ../scss/content/_header_and_main.scss */
+  /* line 939, ../scss/content/_header_and_main.scss */
   .slideshow .banner-msg h2 strong {
     font-size: 24px; } }
 @media only screen and (max-width: 479px) {
-  /* line 950, ../scss/content/_header_and_main.scss */
+  /* line 946, ../scss/content/_header_and_main.scss */
   .slideshow .banner-msg {
     top: 20%; }
 
-  /* line 954, ../scss/content/_header_and_main.scss */
+  /* line 950, ../scss/content/_header_and_main.scss */
   .slideshow .banner-msg h2 {
     font-size: 14px; }
 
-  /* line 958, ../scss/content/_header_and_main.scss */
+  /* line 954, ../scss/content/_header_and_main.scss */
   .slideshow .banner-msg h2 strong {
     font-size: 16px; } }
 /* -------------------------------------------- *
  * Promotion Banner Section
  */
-/* line 967, ../scss/content/_header_and_main.scss */
+/* line 963, ../scss/content/_header_and_main.scss */
 .promos {
   margin: 0 0 10px 0;
   padding: 0;
   width: 100%; }
 
-/* line 973, ../scss/content/_header_and_main.scss */
+/* line 969, ../scss/content/_header_and_main.scss */
 .promos:after {
   content: '';
   display: table;
   clear: both; }
 
 /* Specifying the body only in order to override the .std ul li styling */
-/* line 979, ../scss/content/_header_and_main.scss */
+/* line 975, ../scss/content/_header_and_main.scss */
 body .promos > li {
   margin: 0 0 10px 0;
   list-style: none;
@@ -1000,22 +997,22 @@ body .promos > li {
   -o-user-select: none;
   user-select: none; }
 
-/* line 988, ../scss/content/_header_and_main.scss */
+/* line 984, ../scss/content/_header_and_main.scss */
 .promos > li:last-child {
   margin-bottom: 0; }
 
-/* line 992, ../scss/content/_header_and_main.scss */
+/* line 988, ../scss/content/_header_and_main.scss */
 .promos img {
   max-width: 100%;
   width: 100%; }
 
-/* line 997, ../scss/content/_header_and_main.scss */
+/* line 993, ../scss/content/_header_and_main.scss */
 .promos a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
   display: block; }
 
-/* line 1002, ../scss/content/_header_and_main.scss */
+/* line 998, ../scss/content/_header_and_main.scss */
 .promos span {
   color: #FFFFFF;
   text-transform: uppercase;
@@ -1028,37 +1025,37 @@ body .promos > li {
   font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
   text-shadow: 1px 1px 3px #555555; }
 
-/* line 1015, ../scss/content/_header_and_main.scss */
+/* line 1011, ../scss/content/_header_and_main.scss */
 .promos strong {
   font-weight: 600;
   font-size: 26px;
   display: block; }
 
 @media only screen and (min-width: 771px) {
-  /* line 1023, ../scss/content/_header_and_main.scss */
+  /* line 1019, ../scss/content/_header_and_main.scss */
   .promos span {
     font-size: 16px; }
 
-  /* line 1027, ../scss/content/_header_and_main.scss */
+  /* line 1023, ../scss/content/_header_and_main.scss */
   .promos strong {
     font-size: 17px; }
 
   /* Config: Three columns + flexible gutter */
-  /* line 1034, ../scss/content/_header_and_main.scss */
+  /* line 1030, ../scss/content/_header_and_main.scss */
   body .promos > li {
     float: left;
     width: 31.74603%;
     margin-right: 2.38095%; }
 
-  /* line 1040, ../scss/content/_header_and_main.scss */
+  /* line 1036, ../scss/content/_header_and_main.scss */
   .promos > li:nth-child(3n) {
     margin-right: 0; } }
 @media only screen and (min-width: 880px) {
-  /* line 1046, ../scss/content/_header_and_main.scss */
+  /* line 1042, ../scss/content/_header_and_main.scss */
   .promos span {
     font-size: 18px; }
 
-  /* line 1050, ../scss/content/_header_and_main.scss */
+  /* line 1046, ../scss/content/_header_and_main.scss */
   .promos strong {
     font-size: 24px; } }
 /* -------------------------------------------- *
@@ -1066,14 +1063,14 @@ body .promos > li {
  */
 /* Hiding the reviews content via CSS because we can't modify the template, */
 /* since it may be used in other places where those elements are needed */
-/* line 1061, ../scss/content/_header_and_main.scss */
+/* line 1057, ../scss/content/_header_and_main.scss */
 .cms-index-index .products-grid .ratings,
 .cms-index-index .products-grid .actions,
 .cms-index-noroute .products-grid .ratings,
 .cms-index-noroute .products-grid .actions {
   display: none; }
 
-/* line 1068, ../scss/content/_header_and_main.scss */
+/* line 1064, ../scss/content/_header_and_main.scss */
 .cms-index-index h2.subtitle {
   padding: 6px 0;
   text-align: center;
@@ -1082,7 +1079,7 @@ body .promos > li {
   border-bottom: 1px solid #CCCCCC;
   border-top: 1px solid #CCCCCC; }
 
-/* line 1077, ../scss/content/_header_and_main.scss */
+/* line 1073, ../scss/content/_header_and_main.scss */
 .cms-index-noroute h2.subtitle {
   display: none; }
 
@@ -1113,7 +1110,7 @@ body .promos > li {
     .nav-primary a.level0 {
       line-height: 35px;
       text-align: center;
-      padding: 0 0 2px 0; }
+      padding: 0 0 5px 0; }
     /* line 50, ../scss/content/_media_min_width.scss */
     .nav-primary li.level0 {
       line-height: 35px; }

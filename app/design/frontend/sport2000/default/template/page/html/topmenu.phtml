@@ -36,8 +36,7 @@ $_menu = $this->getHtml('level-top') ?>
 <?php if($_menu): ?>
     <nav id="nav">
         <ol class="nav-primary">
-            <li class="level0 nav-0 first"><a href="<?php echo $this->getUrl('home') ?>" class="level0"><?php echo $this->__('Home');?></a></li>
-            <?php echo $_menu ?>
+            <li class="level0 nav-0 first"><a href="<?php echo $this->getUrl('home') ?>" class="level0"><?php echo $this->__('Home');?></a></li><?php echo $_menu ?>
         </ol>
     </nav>
 <?php endif
