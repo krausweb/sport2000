@@ -28,6 +28,12 @@
  * All @media only screen and(min-width: XXX)
  * ============================================ */
 
+/*@media only screen and(min-width: 321px) {
+  .tablet, .desktop{
+    display: none;
+  }
+}*/
+
 @media only screen and(min-width: 771px) {
   .page-header {
     max-width: 100%;
@@ -126,5 +132,18 @@
   }
   .page-header-container-top-align{
     padding: 25px 0 25px 25px;
+  }
+
+  .mobile, .tablet{
+    display: none;
+  }
+  .desktop{
+    display: block;
+  }
+}
+
+@media only screen and(min-width: 961px) {
+  .container {
+    max-width: 960px;
   }
 }

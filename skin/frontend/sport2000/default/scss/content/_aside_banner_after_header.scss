@@ -23,7 +23,36 @@
 // @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 //
 
-
-/* ============================================ *
- * Container
- * ============================================ */
+.aside-banner-after-header{
+  color: white;
+  background-color: black;
+}
+.aside-banner-after-header .grid-full{
+  margin-bottom: 0;
+}
+.aside-header{
+  font-size: 20px;
+  height: 80px;
+  text-align: center;
+  padding-top: 30px;
+}
+.aside-info-box{
+  padding-bottom: 23px;
+}
+.a-aside-header{}
+.button-aside-header{
+  background-color: $color_cardinal_approx;
+  border-bottom: 2px solid $black_20;
+  font-size: 16px;
+  line-height: 12px;
+  &:hover {
+    background-color: $color_crimson_approx;
+    transition: 2ms;
+    &:before {
+      opacity: 1;
+    }
+  }
+}
+.mobile .button-aside-header{
+  width: 100%;
+}

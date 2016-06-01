@@ -23,27 +23,14 @@
 // @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 //
 
-// ==============================================
-// Sport2000 Specific Components
-// ==============================================
 
-$mq-support: true;
-$mq-fixed-value: false;
+/* ============================================ *
+ * Container
+ * ============================================ */
 
-@import "framework";
-
-// ----------------------------------------------
-// Vendor
-
-@import "vendor/ultima_grid12";
-
-// ----------------------------------------------
-// Content
-
-@import "content/header_and_main";
-@import "content/aside_banner_after_header";
-@import "content/main_container";
-
-@import "content/media_min_width";
-@import "content/media_max_width";
-@import "content/media_device";
+.main-container{
+  background-image: $url_bg_content;
+  &.container {
+    padding: 25px 15px 15px 15px;
+  }
+}

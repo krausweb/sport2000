@@ -1,0 +1,111 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     rwd_default
+ * @copyright   Copyright (c) 2006-2016 X.commerce, Inc. and affiliates (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Template for Mage_Page_Block_Html
+ */
+?>
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7 ]> <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js"> <!--<![endif]-->
+
+<head>
+<?php echo $this->getChildHtml('head') ?>
+</head>
+<body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
+<?php echo $this->getChildHtml('after_body_start') ?>
+<div class="wrapper">
+    <?php echo $this->getChildHtml('global_notices') ?>
+
+    <?php echo $this->getChildHtml('header') ?>
+
+    <aside class="aside-banner-after-header">
+        <div class="container grid-container-spaced mobile">
+            <div class="no-gutter grid-full">
+                <div class="aside-header"><?php echo $this->__('Your professional sportshop') ?></div>
+                <div class="aside-info-box">
+                    <a title="<?php echo $this->__('Go to football') ?>" class="a-aside-header" href="<?php echo $this->getUrl('') ?>">
+                        <img src="<?php echo $this->getSkinUrl('images/media/mobile/basketball.jpg') ?>" alt="<?php echo $this->__('Basketball') ?>" />
+                        <button class="button button-aside-header">
+                            <?php echo $this->__('Go to football') ?><span class="icon-sprite icon-arrow"></span>
+                        </button>
+                    </a>
+                </div>
+                <div class="aside-info-box">
+                    <a title="<?php echo $this->__('Go to running') ?>" class="a-aside-header" href="<?php echo $this->getUrl('') ?>">
+                        <img src="<?php echo $this->getSkinUrl('images/media/mobile/run.jpg') ?>" alt="<?php echo $this->__('Run') ?>" />
+                        <button class="button button-aside-header">
+                            <?php echo $this->__('Go to running') ?><span class="icon-sprite icon-arrow"></span>
+                        </button>
+                    </a>
+                </div>
+                <div class="aside-info-box">
+                    <a title="<?php echo $this->__('Go to fitness') ?>" class="a-aside-header" href="<?php echo $this->getUrl('') ?>">
+                        <img src="<?php echo $this->getSkinUrl('images/media/mobile/athletic.jpg') ?>" alt="<?php echo $this->__('Athletic') ?>" />
+                        <button class="button button-aside-header">
+                            <?php echo $this->__('Go to fitness') ?><span class="icon-sprite icon-arrow"></span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container grid-container-spaced tablet">
+            <div class="grid12-6">TEST tablet 1</div>
+            <div class="grid12-6">TEST tablet 2</div>
+        </div>
+
+        <div class="container grid-container-spaced desktop">
+            <div class="grid12-8">TEST desktop 1</div>
+            <div class="grid12-4">TEST desktop 2</div>
+        </div>
+    </aside>
+
+    <div class="main-container col1-layout container grid-container-spaced">
+        <div class="main grid-full">
+            <?php echo $this->getChildHtml('breadcrumbs') ?>
+            <div class="col-main">
+                <?php echo $this->getChildHtml('global_messages') ?>
+                <?php echo $this->getChildHtml('content') ?>
+            </div>
+        </div>
+    </div>
+
+    <?php echo $this->getChildHtml('footer_before') ?>
+    <?php echo $this->getChildHtml('footer') ?>
+    <?php echo $this->getChildHtml('global_cookie_notice') ?>
+    <?php echo $this->getChildHtml('before_body_end') ?>
+</div>
+<?php echo $this->getAbsoluteFooter() ?>
+</body>
+</html>
+
