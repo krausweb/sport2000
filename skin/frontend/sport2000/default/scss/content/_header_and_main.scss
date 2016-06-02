@@ -660,11 +660,11 @@ ol li {
         font-family: $font_TTLreg, $font_Verdana, $font_Arial, $font_sans_sf;
         background-color: inherit;
         font-size: 14px;
-
         top: 0;
         color: $gray;
         padding-left: 5px;
         width: auto;
+        margin-left: 0;
         &:before{
             content: '( ';
         }
@@ -677,6 +677,7 @@ ol li {
     }
     &.no-count .count {
         display: inline-block;
+        margin-left: 0;
     }
 }
 .skip-links{

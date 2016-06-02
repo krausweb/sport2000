@@ -26,14 +26,6 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 
-var bp = {
-    xsmall: 479,
-    small: 599,
-    medium: 770,
-    large: 979,
-    xlarge: 1199
-};
-
 $j(document).ready(function(){
     headerCustomSport2000.init();
 });
@@ -142,77 +134,31 @@ var headerCustomSport2000 = {
         });
     },
     menuMiniHoverVisibleHideResize: function(){
-        // for menu mini, after 868 px
+        // menu mini visible after bp.medium
 
-        //ПЕРЕНЕСТИ В КСС !!!!!!!!!!!!!!!!!!!!!!!
-        var menuMini = $j('.page-header-menu-mini');
-        var menuTop = $j('.page-header-container-top-menu');
-        var showMiniMenu = 848 //(@media max-width 868-20)
-            , maxTabletSize = 768 // 755 - for PC (
-            , minTabletSize = 500
-            , paddingMinTablet = 10
-            , paddingMaxTablet = 15
-            , paddingDefault = 30;
-        /*
-         xsmall: 479,
-         small: 599,
-         medium: 770,
-         large: 979,
-         xlarge: 1199
-         */
-        //ПЕРЕНОСИТЬ МЕНЮ ДЖАВАСКРИПТОМ, СДЕЛАТЬ КАК ПОЗИШН РЕЛАТИВ !!!!!!!!!!!!!!!!!!!!!
+        var menuMini = $j('.page-header-menu-mini')
+            , menuTop = $j('.page-header-container-top-menu')
+            , menuHeaderLogo = $j('#header-logo')
+            , menuMiniActiveCss = 'active'
+            , menuMiniDetailActiveCss = 'top-menu-mini-active';
 
-        // hover ico menu
-        menuMini.on('mouseenter mouseleave', function () {
-            // Toggle stubs
-            if ( menuMini.hasClass('active') && !menuMini.hasClass('active-top') ) {
-                menuMini.removeClass('active');
-                menuTop.removeClass('top-menu-mini-active');
-                // remove "align" right when not active mini menu
-                menuTop.removeAttr('style');
-            } else {
-                menuMini.addClass('active');
-                menuTop.addClass('top-menu-mini-active');
-
-                if( $j(window).width() < minTabletSize ){
-                    // 10 //@media only screen and(max-width: 499px) {
-                    menuTop.css('left', $j(window).width() - 130 - paddingMinTablet);
-                }else if( $j(window).width() < maxTabletSize ){
-                    // 15 //@media only screen and(max-width: 770px) {
-                    menuTop.css('left', $j(window).width() - 130 - paddingMaxTablet);
-                }else{
-                    // 30
-                    menuTop.css('left', $j(window).width() - 130 - paddingDefault);
-                }
+        enquire.register('(max-width: ' + bp.medium + 'px)', {
+            match: function () {
+                menuMini.append(menuTop);
+            },
+            unmatch: function () {
+                menuHeaderLogo.after(menuTop);
             }
         });
-
-        // hover detail menu
-        menuTop.on('mouseenter mouseleave', function () {
-            if($j(window).width() < showMiniMenu) {
-                if (menuTop.hasClass('top-menu-mini-active')) {
-                    menuMini.removeClass('active');
-                    menuMini.removeClass('active-top'); // !!!
-                    menuTop.removeClass('top-menu-mini-active');
-                    // remove "align" right when not active mini menu
-                    menuTop.removeAttr('style');
-                } else {
-                    menuMini.addClass('active');
-                    menuMini.addClass('active-top');    // !!!
-                    menuTop.addClass('top-menu-mini-active');
-                    if ($j(window).width() < minTabletSize) {
-                        // 10 //@media only screen and(max-width: 499px) {
-                        menuTop.css('left', $j(window).width() - 130 - paddingMinTablet);
-                    } else if ($j(window).width() < maxTabletSize) {
-                        // 15 //@media only screen and(max-width: 770px) {
-                        menuTop.css('left', $j(window).width() - 130 - paddingMaxTablet);
-                    } else {
-                        // 30
-                        menuTop.css('left', $j(window).width() - 130 - paddingDefault);
-                    }
-                }
+        menuMini.on('mouseenter mouseleave', function () {
+            // Toggle stubs
+            if (menuMini.hasClass(menuMiniActiveCss)) {
+                menuMini.removeClass(menuMiniActiveCss);
+                menuTop.removeClass(menuMiniDetailActiveCss);
+            } else {
+                menuMini.addClass(menuMiniActiveCss);
+                menuTop.addClass(menuMiniDetailActiveCss);
             }
         });
     }
-
 };

@@ -33,22 +33,22 @@
   @for $i from 1 through 6 {
     &.nav-#{$i} ul.level0 {
       @if $i == 1 {
-        left: -104px;
+        left: -100px;
       } @else {
-        left: -104px - (($i - 1) * 100);
+        left: -100px - (($i - 1) * 100);
       }
     }
   }
 }
 
 // main top menu "ol li.nav-1 ul.level0" for max width 960
-@mixin ul-level0-left960() {
+@mixin ul-level0-left979() {
   @for $i from 1 through 6 {
     &.nav-#{$i} ul.level0 {
       @if $i == 1 {
-        left: -84px;
+        left: -66px;
       } @else {
-        left: -84px - (($i - 1) * 80);
+        left: -66px - (($i - 1) * 66);
       }
     }
   }

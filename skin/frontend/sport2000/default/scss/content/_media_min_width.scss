@@ -33,6 +33,15 @@
     display: none;
   }
 }*/
+@media only screen and (min-width: 480px) {
+  .skip-link .label {
+    display: inline;
+  }
+  .skip-link .icon {
+    margin-right: 3px;
+  }
+}
+
 
 @media only screen and(min-width: 771px) {
   .page-header {
