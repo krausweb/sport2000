@@ -51,6 +51,13 @@
             <!-- remove wishlist and cart links in top.links - by design -->
             <remove name="wishlist_link" />
             <remove name="checkout_cart_link" />
+
+            <block type="cms/block" name="banner_after_header">
+                <action method="setBlockId"><block_id>banner-mobile</block_id></action>
+                <action method="setBlockId"><block_id>banner-tablet</block_id></action>
+                <action method="setBlockId"><block_id>banner-desktop</block_id></action>
+            </block>
+
         </reference>
 
         <!-- add customer-service/ link - by design -->

@@ -1585,42 +1585,42 @@ body .promos > li {
 /*****************************************************************************************************************/
 /******************** Additional for Homepage (banner/slider section) - END ************************************/
 /*****************************************************************************************************************/
-/* line 26, ../scss/content/_aside_banner_after_header.scss */
-.aside-banner-after-header {
+/* line 26, ../scss/content/_banner_after_header.scss */
+.banner-after-header {
   color: white;
   background-color: black; }
 
-/* line 30, ../scss/content/_aside_banner_after_header.scss */
-.aside-banner-after-header .grid-full {
+/* line 30, ../scss/content/_banner_after_header.scss */
+.banner-after-header .grid-full {
   margin-bottom: 0; }
 
-/* line 33, ../scss/content/_aside_banner_after_header.scss */
-.aside-header {
+/* line 33, ../scss/content/_banner_after_header.scss */
+.banner-header {
   font-size: 20px;
   height: 80px;
   text-align: center;
   padding-top: 30px; }
 
-/* line 39, ../scss/content/_aside_banner_after_header.scss */
-.aside-info-box {
+/* line 39, ../scss/content/_banner_after_header.scss */
+.banner-info-box {
   padding-bottom: 23px; }
 
-/* line 43, ../scss/content/_aside_banner_after_header.scss */
-.button-aside-header {
+/* line 43, ../scss/content/_banner_after_header.scss */
+.button-banner-header {
   background-color: #c41230;
   border-bottom: 2px solid rgba(0, 0, 0, 0.2);
   font-size: 16px;
   line-height: 12px; }
-  /* line 48, ../scss/content/_aside_banner_after_header.scss */
-  .button-aside-header:hover {
+  /* line 48, ../scss/content/_banner_after_header.scss */
+  .button-banner-header:hover {
     background-color: #e41232;
     transition: 2ms; }
-    /* line 51, ../scss/content/_aside_banner_after_header.scss */
-    .button-aside-header:hover:before {
+    /* line 51, ../scss/content/_banner_after_header.scss */
+    .button-banner-header:hover:before {
       opacity: 1; }
 
-/* line 56, ../scss/content/_aside_banner_after_header.scss */
-.mobile .button-aside-header {
+/* line 56, ../scss/content/_banner_after_header.scss */
+.mobile .button-banner-header {
   width: 100%; }
 
 /* ============================================ *
@@ -2035,7 +2035,7 @@ body .promos > li {
     font-family: TitilliumText22L_Regular, Verdana, Arial, sans-serif; } }
 @media only screen and (max-width: 320px) {
   /* line 273, ../scss/content/_media_max_width.scss */
-  .aside-banner-after-header {
+  .banner-after-header {
     background-image: url(../images/media/bg_aside_header_mobile.jpg); }
 
   /* line 276, ../scss/content/_media_max_width.scss */

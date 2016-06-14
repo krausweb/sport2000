@@ -270,8 +270,8 @@
 }
 
 @media only screen and(max-width: 320px) {
-  .aside-banner-after-header{
-    background-image: $url_bg_aside_mobile;
+  .banner-after-header{
+    background-image: $url_bg_banner_mobile;
   }
   .main-container{
     max-width: 320px;

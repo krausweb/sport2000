@@ -48,48 +48,6 @@
 
     <?php echo $this->getChildHtml('header') ?>
 
-    <aside class="aside-banner-after-header">
-        <div class="container grid-container-spaced mobile">
-            <div class="no-gutter grid-full">
-                <div class="aside-header"><?php echo $this->__('Your professional sportshop') ?></div>
-                <div class="aside-info-box">
-                    <a title="<?php echo $this->__('Go to football') ?>" class="a-aside-header" href="<?php echo $this->getUrl('') ?>">
-                        <img src="<?php echo $this->getSkinUrl('images/media/mobile/basketball.jpg') ?>" alt="<?php echo $this->__('Basketball') ?>" />
-                        <button class="button button-aside-header">
-                            <?php echo $this->__('Go to football') ?><span class="icon-sprite icon-arrow"></span>
-                        </button>
-                    </a>
-                </div>
-                <div class="aside-info-box">
-                    <a title="<?php echo $this->__('Go to running') ?>" class="a-aside-header" href="<?php echo $this->getUrl('') ?>">
-                        <img src="<?php echo $this->getSkinUrl('images/media/mobile/run.jpg') ?>" alt="<?php echo $this->__('Run') ?>" />
-                        <button class="button button-aside-header">
-                            <?php echo $this->__('Go to running') ?><span class="icon-sprite icon-arrow"></span>
-                        </button>
-                    </a>
-                </div>
-                <div class="aside-info-box">
-                    <a title="<?php echo $this->__('Go to fitness') ?>" class="a-aside-header" href="<?php echo $this->getUrl('') ?>">
-                        <img src="<?php echo $this->getSkinUrl('images/media/mobile/athletic.jpg') ?>" alt="<?php echo $this->__('Athletic') ?>" />
-                        <button class="button button-aside-header">
-                            <?php echo $this->__('Go to fitness') ?><span class="icon-sprite icon-arrow"></span>
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="container grid-container-spaced tablet">
-            <div class="grid12-6">TEST tablet 1</div>
-            <div class="grid12-6">TEST tablet 2</div>
-        </div>
-
-        <div class="container grid-container-spaced desktop">
-            <div class="grid12-8">TEST desktop 1</div>
-            <div class="grid12-4">TEST desktop 2</div>
-        </div>
-    </aside>
-
     <div class="main-container col1-layout container grid-container-spaced">
         <div class="main grid-full">
             <?php echo $this->getChildHtml('breadcrumbs') ?>
